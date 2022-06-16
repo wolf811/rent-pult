@@ -1,1 +1,8 @@
 https://webdesign-master.ru/blog/tools/gulp-4-lesson.html
+
+npm i gulp --save-dev
+npm i browser-sync --save-dev
+npm i gulp-concat gulp-uglify-es --save-dev  //требует версию node.js не менее v11.13.0
+npm i --save-dev gulp-sass sass gulp-less gulp-autoprefixer gulp-clean-css
+npm i -D sass
+npm i --save-dev compress-images gifsicle@5.3.0 pngquant-bin@6.0.0 del
