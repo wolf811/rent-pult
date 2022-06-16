@@ -1,6 +1,8 @@
 footer {
-    background-color: rgba(1, 63, 115, 1);
-    border-top: 1px solid #f7a014;
+    // background-color: rgba(8, 108, 65, 1);
+    background-color: #333333;
+    border-top: 1px solid #F25F25;
+
 
     .nav-link {
         color: #A9B0C3;
@@ -13,4 +15,10 @@ footer {
             font-size: 0.9rem;
         }
     }
+
+    p {
+        text-transform: uppercase;
+        color: #f8f9fa;
+    }
+
 }

@@ -1,9 +1,11 @@
 header {
-    background: -webkit-linear-gradient(-137deg, #0066cc 28%, #0356a8 72%);
+    /*background: -webkit-linear-gradient(-137deg, #0066cc 28%, #0356a8 72%);
     background: -moz-linear-gradient(-137deg, #0066cc 28%, #0356a8 72%);
     background: -o-linear-gradient(-137deg, #0066cc 28%, #0356a8 72%);
     background: -ms-linear-gradient(-137deg, #0066cc 28%, #0356a8 72%);
-    background: linear-gradient(227deg, #0066cc 28%, #0356a8 72%);
+    background: linear-gradient(227deg, #0066cc 28%, #0356a8 72%);*/
+    background-color: #ccc;
+    border-bottom: 1px solid #F25F25;
 }
 
 .header-main {
@@ -48,13 +50,14 @@ header {
         }
 
         a {
-            color: #fff;
+            color: #212529;
             margin-bottom: 0.25rem;
             text-decoration: none;
+            font-size: 1.25rem;
 
             &:hover {
                 transition: 0.3s;
-                color: #A9B0C3;
+                color: #000;
             }
 
             &:last-child {

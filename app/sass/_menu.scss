@@ -1,15 +1,17 @@
 .navbar-main {
-    background-color: rgba(1, 63, 115, 1);
+    // background-color: rgba(1, 63, 115, 1);
+    // background-color: rgba(25, 166, 106, 1);
+    background-color: #333333;
     padding-top: 0;
     padding-bottom: 0;
-    border-bottom: 1px solid #f7a014;
+    border-bottom: 1px solid #F25F25;
 
     .navbar-brand {
         color: #fff;
 
         &:hover {
             transition: 0.3s;
-            color: #A9B0C3;
+            color: #ccc;
         }
     }
 
@@ -31,15 +33,15 @@
 
         .nav-link {
             padding: 1rem;
-            color: #A9B0C3;
+            color: #DCDDDF;
 
             &:hover {
                 transition: 0.3s;
-                background-color: rgba(35, 89, 133, 1);
-                color: #fff;
+                background-color: #666666;
+                // color: #fff;
 
                 @media (max-width: 991px) {
-                    background-color: rgba(247, 160, 20, 0.3);
+                    background-color: #eee;
                 }
             }
 
@@ -71,13 +73,16 @@
 
 .offcanvas-main {
     .offcanvas-header {
-        background-color: rgba(255, 174, 64, 1);
-        padding: 0.75rem 1rem;
+        background-color: #666666;
+        padding: 0.5rem 1rem;
+        color: #fff;
+        border-bottom: 1px solid #F25F25;
     }
 
     .offcanvas-body {
         @media (max-width: 991px) {
-            background-color: rgba(255, 196, 115, 1);
+            background-color: #ccc;
+            color: #fff;
         }
     }
 }
