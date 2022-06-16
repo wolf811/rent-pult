@@ -1,0 +1,16 @@
+footer {
+    background-color: rgba(1, 63, 115, 1);
+    border-top: 1px solid #f7a014;
+
+    .nav-link {
+        color: #A9B0C3;
+
+        &:hover {
+            color: #fff;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 0.9rem;
+        }
+    }
+}

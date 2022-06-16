@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RENT-PULT.RU - система управления арендой</title>
+    <!-- favicon.ico -->
+    <link rel="apple-touch-icon" sizes="144x144" href="images/dest/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/dest/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/dest/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="images/dest/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- end favicon.ico -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- @@include('includes/header.html') -->
+        <nav class="navbar navbar-main navbar-expand-lg shadow">
+            <div class="container-xxl">
+                <a class="navbar-brand fw-bold text-uppercase" href="#">rent-pult.ru</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="offcanvas offcanvas-main offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">О проекте</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Условия использования</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Контакты</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav justify-content-end flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link " href="authorization.html"><i class="bi bi-box-arrow-in-right me-2"></i>Войти / Регистрация</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <header class="py-3 border-bottom border-warning">
+            <div class="header-main">
+                <div class="container-xl">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg mb-3 mb-lg-0">
+                            <div class="d-flex align-items-center lex-column flex-sm-row justify-content-center justify-content-lg-start">
+                                <img src="images/dest/logo-ras.png" alt="Логотип" class="img-fluid">
+                                <h1 class="fs-4 ms-0 ms-sm-3 text-light text-center text-lg-start">
+                                    Система управления арендой
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="col-sm col-lg-3 col-xl-2">
+                            <div class="contacts d-flex flex-column text-center">
+                                <a href="tel:+79265568904"><i class="bi bi-telephone me-2"></i>+7 (926) 556-89-04</a>
+                                <a href="mailto:arenda@rent-pult.ru"><i class="bi bi-envelope me-2"></i>arenda@rent-pult.ru</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="py-4">
+            <div class="container">
+                <div class="row justify-content-sm-center my-4">
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card card-main shadow my-5" id="form-signin">
+                            <div class="card-header fw-bold py-3">Вход в rent-pult.ru
+                            </div>
+                            <div class="card-body">
+                                <form method="post" action="">
+                                    <div class="mb-3">
+                                        <label for="id_email" class="form-label">Email (логин)</label>
+                                        <input type="text" class="form-control" id="login">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="id_password" class="form-label">Пароль</label>
+                                        <div class="input-group">
+                                            <input type="password" class="form-control border-end-0" id="password">
+                                            <a href="#" class="btn btn-link border border-start-0" id="btn-move-to-recovery" role="button">Забыли?</a>
+                                        </div>
+                                    </div>
+                                    <hr class="border-bottom border-warning">
+                                    <button type="submit" class="btn btn-warning"><i class="bi bi-box-arrow-in-right me-2"></i>Войти</button>
+                                    <a href="#" class="btn btn-outline-warning text-dark" id="btn-move-to-reg">Регистрация</a>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="card card-main shadow my-5" id="form-registration" style="display: none;">
+                            <div class="card-header fw-bold py-3">
+                                Регистрация
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="login-reg" class="form-label">Email (логин)</label>
+                                        <input type="text" class="form-control" id="login-reg">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="password-reg" class="form-label">Пароль</label>
+                                        <input type="password" class="form-control" id="password-reg">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="password-reg-repeat" class="form-label">Повторите пароль</label>
+                                        <input type="password" class="form-control" id="password-reg-repeat">
+                                    </div>
+                                    <p class="fw-light">Регистрируясь, Вы принимаете <a href="#" target="_blank">Пользовательское соглашение</a></p>
+                                    <hr class="border-bottom border-warning">
+                                    <button type="submit" class="btn btn-warning">Зарегистрироваться</button>
+                                    <a href="#" class="btn btn-outline-warning text-dark" id="btn-move-to-signin">Вход</a>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="card card-main shadow my-5" id="form-recovery" style="display: none;">
+                            <div class="card-header fw-bold py-3">
+                                Восстановление пароля
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <p class="fw-light">Введите E-mail (логин). Ссылка для смены пароля будет отправлена на указанный Вами адрес.</p>
+                                    <div class="mb-3">
+                                        <label for="email-recovery" class="form-label">Email (логин)</label>
+                                        <input type="text" class="form-control" id="email-recovery">
+                                    </div>
+                                    <hr class="border-bottom border-warning">
+                                    <button type="submit" class="btn btn-warning">Отправить</button>
+                                    <a href="#" class="btn btn-outline-warning text-dark" id="btn-cancel-recovery">Отмена</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="mt-auto">
+            <div class="container">
+                <div class="py-3 my-4">
+                    <ul class="nav justify-content-center border-bottom border-warning pb-3 mb-3">
+                        <li class="nav-item"><a href="#" class="nav-link px-2">О проекте</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2">Условия использования</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2">Стоимость</a></li>
+                    </ul>
+                    <p class="text-center text-light">© 2022, rent-pult.ru</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Подключаем скрипты проекта -->
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

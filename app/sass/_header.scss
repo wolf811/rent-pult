@@ -1,0 +1,65 @@
+header {
+    background: -webkit-linear-gradient(-137deg, #0066cc 28%, #0356a8 72%);
+    background: -moz-linear-gradient(-137deg, #0066cc 28%, #0356a8 72%);
+    background: -o-linear-gradient(-137deg, #0066cc 28%, #0356a8 72%);
+    background: -ms-linear-gradient(-137deg, #0066cc 28%, #0356a8 72%);
+    background: linear-gradient(227deg, #0066cc 28%, #0356a8 72%);
+}
+
+.header-main {
+
+    .profile-info {
+        color: #A9B0C3;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+
+            &:hover {
+                transition: 0.3s;
+                color: #A9B0C3;
+            }
+        }
+
+        @media (max-width: 767px) {
+            text-align: center;
+            padding: 0.5rem 0;
+            border-top: 1px solid #f7a014;
+            border-bottom: 1px solid #f7a014;
+        }
+
+        @media (max-width: 991px) {
+            font-size: 0.9rem;
+        }
+    }
+
+    .contacts {
+
+        @media (max-width: 767px) {
+            width: 100%;
+            border: none;
+            background-color: transparent;
+            box-shadow: none;
+            padding: 0;
+        }
+
+        @media (max-width: 991px) {
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: #fff;
+            margin-bottom: 0.25rem;
+            text-decoration: none;
+
+            &:hover {
+                transition: 0.3s;
+                color: #A9B0C3;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

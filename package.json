@@ -17,11 +17,15 @@
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.3.0",
     "gulp-less": "^5.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-uglify-es": "^3.0.0",
     "jquery": "^3.6.0",
     "pngquant-bin": "^6.0.0",
     "sass": "^1.52.3"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.8.3"
   }
 }
