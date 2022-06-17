@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RENT-PULT.RU - Личный кабинет</title>
+    <!-- favicon.ico -->
+    <link rel="apple-touch-icon" sizes="144x144" href="images/dest/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/dest/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/dest/favicon/favicon-16x16.png">
+    <!-- <link rel="manifest" href="images/dest/favicon/site.webmanifest"> -->
+    <link rel="mask-icon" href="images/dest/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- end favicon.ico -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- @@include('includes/header.html') -->
+        <nav class="navbar navbar-main navbar-expand-lg shadow">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-uppercase" href="#">rent-pult.ru</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="offcanvas offcanvas-main offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5>
+                        <button type="button" class="btn btn-link text-light" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Главная</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">О системе</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Контакты</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav justify-content-end flex-grow-1">
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="authorization.html"><i class="bi bi-box-arrow-in-right me-2"></i>Войти / Регистрация</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#"><i class="bi bi-person-circle me-2"></i><span class="d-inline-block d-lg-none d-xl-inline-block">eroshenkov@gmail.com</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="bi bi-box-arrow-left me-2"></i>Выйти</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <header class="header-main py-3 mb-3">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md mb-3 mb-lg-0">
+                        <div class="d-flex align-items-center flex-column flex-sm-row justify-content-center justify-content-lg-start">
+                            <img src="images/dest/logo-ras.png" alt="Логотип" class="img-fluid">
+                            <h1 class="fs-2 ms-0 ms-sm-3 text-center text-lg-start">Система управления арендой</h1>
+                        </div>
+                    </div>
+                    <div class="col-sm col-lg-4">
+                        <div class="contacts d-flex flex-column text-center text-md-end">
+                            <a href="tel:+79265568904"><i class="bi bi-telephone me-2"></i>+7 (926) 556-89-04</a>
+                            <a href="mailto:arenda@rent-pult.ru"><i class="bi bi-envelope me-2"></i>arenda@rent-pult.ru</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="mb-5">
+            <div class="container">
+                <nav aria-label="breadcrumb" class="mb-4">
+                    <ol class="breadcrumb breadcrumb-sm">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Library</li>
+                    </ol>
+                </nav>
+                <h1 class="fs-4 mb-4 pb-2 border-bottom">Личный кабинет</h1>
+                <div class="card card-main shadow-sm mb-4">
+                    <div class="card-header d-flex align-items-center justify-content-between py-3">
+                        <div class="fs-5">
+                            <span class="fw-light me-2">Логин в системе:</span>
+                            <span class="fw-normal">eroshenkov@gmail.com</span>
+                        </div>
+                        <div class="text-success text-nowrap small">ID: 00001</div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="text-secondary fw-bold mb-3">Данные о пользователе</h5>
+                        <div class="btn btn-success"><i class="bi bi-plus me-1"></i>Добавить данные</div>
+                    </div>
+                </div>
+                <h4 class="text-secondary fw-bold mb-3">Мои объекты</h4>
+                <div>
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-2">
+                                <img src="images/dest/logo-black.png" class="img-fluid rounded-start" alt="plug">
+                            </div>
+                            <div class="col-md">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 
+                <div class="row">
+                    <div class="col-lg-9 order-2 order-lg-1 py-4">
+                        <div class="card card-main shadow-sm">
+                            <div class="card-header fs-5 fw-light text-primary py-3">
+                                <span class="me-2">Логин в системе:</span>
+                                <span class="fw-normal">eroshenkov@gmail.com</span>
+                                <span class="text-success float-sm-end">
+                                    <small>ID: 00001</small>
+                                    <a class="btn btn-sm btn-outline-warning text-black ms-2" href="#" title="Копировать">
+                                        <i class="bi bi-clipboard-plus"></i>
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="card-body">
+                                <form action="" method="post">
+                                    <div class="row justify-content-sm-center my-4">
+                                        <div class="col-sm-8">
+                                            <p class="form-label">Смена пароля</p>
+                                            <div class="row">
+                                                <div class="col mb-2 mb-sm-0">
+                                                    <input name="pass1" type="password" class="form-control" placeholder="Новый пароль" aria-label="New password">
+                                                </div>
+                                                <div class="col">
+                                                    <input name="pass2" type="password" class="form-control" placeholder="Повторите пароль" aria-label="Repeat password">
+                                                </div>
+                                                <div class="col-1">
+                                                    <button class="btn btn-warning disabled" title="Сохранить"><i class="bi bi-save"></i></button>
+                                                </div>
+                                            </div>
+                                            <div class="text-danger mt-1">
+                                                <small>Пароли не совпадают</small>
+                                            </div>
+                                            <div class="text-success mt-2">
+                                                <i class="bi bi-check2 me-1"></i>Пароль сохранен
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <hr class="border-bottom border-warning" />
+                                <form method="post" action="">
+                                    <div class="row justify-content-sm-center my-4">
+                                        <div class="col-sm-8">
+                                            <div class="row mb-3">
+                                                <div class="col-10 col-sm-11">
+                                                    <label for="id_fio" class="form-label">ФИО</label>
+                                                    <input type="text" class="form-control" id="id_fio">
+                                                </div>
+                                                <div class="col-1 align-self-end">
+                                                    <button type="button" class="btn btn-link" title="Изменить"><i class="bi bi-pencil-square"></i></button>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-sm-5">
+                                                    <label for="id_birthday" class="form-label">Дата рождения</label>
+                                                    <input type="date" class="form-control" id="id_birthday">
+                                                </div>
+                                                <div class="col-1 align-self-end">
+                                                    <button type="button" class="btn btn-link" title="Изменить"><i class="bi bi-pencil-square"></i></button>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-sm-5">
+                                                    <label for="id_phone" class="form-label">Телефон</label>
+                                                    <input type="text" class="form-control" id="id_phone" readonly>
+                                                </div>
+                                                <div class="col-1 align-self-end">
+                                                    <button type="button" class="btn btn-link" title="Изменить"><i class="bi bi-pencil-square"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="border-bottom border-warning" />
+                                    <button type="submit" class="btn btn-warning"><i class="bi bi-save me-1"></i>Сохранить</button>
+                                    <a href="#" class="btn btn-outline-secondary">Отмена</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 order-1 order-lg-2 vertical-menu">
+                        <nav class="nav nav-right-main flex-row flex-lg-column">
+                            <a class="nav-link active" href="profile.html">Мой профиль</a>
+                            <a class="nav-link" href="#">Мои объекты</a>
+                        </nav>
+                    </div>
+                </div>
+                 -->
+            </div>
+        </main>
+        <footer class="mt-auto">
+            <div class="container">
+                <div class="py-3 my-4">
+                    <ul class="nav justify-content-center border-bottom border-secondary pb-3 mb-3">
+                        <li class="nav-item"><a href="index.html" class="nav-link px-2">Главная</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2">О системе</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2">Контакты</a></li>
+                    </ul>
+                    <p class="text-center">© 2022, rent-pult.ru</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Подключаем скрипты проекта -->
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
