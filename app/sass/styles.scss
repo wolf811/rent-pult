@@ -4,7 +4,9 @@
 // $warning: #E8A900 !important;
 // $danger: #E83400 !important;
 // $danger-hover: #F3663D !important;
+
 // ======== end Variables ==========
+
 
 html,
 body {
@@ -36,6 +38,39 @@ body {
         flex: 0 0 auto;
     }
 
+}
+
+a {
+    color: #0462B1;
+    text-decoration: none;
+}
+
+a.btn-primary {
+    color: #fff;
+}
+
+.btn-primary {
+    --bs-btn-bg: #0462B1;
+    --bs-btn-border-color: #0462B1;
+    --bs-btn-disabled-bg: #0462B1;
+    --bs-btn-disabled-border-color: #0462B1;
+}
+
+.btn-orange {
+    --bs-btn-color: #212529 !important;
+    --bs-btn-bg: #fd9843;
+    --bs-btn-border-color: #fd9843;
+    --bs-btn-hover-color: #212529;
+    --bs-btn-hover-bg: #fd7e14;
+    --bs-btn-hover-border-color: #fd7e14;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #212529;
+    --bs-btn-active-bg: #fd7e14;
+    --bs-btn-active-border-color: #fd7e14;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #212529;
+    --bs-btn-disabled-bg: #fd9843;
+    --bs-btn-disabled-border-color: #fd9843;
 }
 
 // ======== IMPORT =============

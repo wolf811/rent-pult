@@ -5,11 +5,15 @@ main {
     // background-position: left 25%;
 
 
-    // .page-title {
-    //     background: rgb(217, 217, 235);
-    //     background: linear-gradient(180deg, rgba(217, 217, 235, 1) 0%, rgba(255, 255, 255, 1) 100%);
-    //     border-bottom: 1px solid rgba(247, 160, 20, 1);
-    // }
+    .page-title {
+        // background: rgb(217, 217, 235);
+        // background: linear-gradient(180deg, rgba(217, 217, 235, 1) 0%, rgba(255, 255, 255, 1) 100%);
+        font-size: 1.75rem;
+        text-transform: uppercase;
+        padding-bottom: 0.5rem;
+        margin-bottom: 3rem;
+        border-bottom: 1px solid rgba(247, 160, 20, 1);
+    }
 
     // ======== IMPORT =============
     @import "menu-vertical";
@@ -24,5 +28,5 @@ main {
 }
 
 .breadcrumb-sm {
-    font-size: 75%;
+    font-size: 85%;
 }
