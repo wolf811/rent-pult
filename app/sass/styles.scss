@@ -17,7 +17,7 @@ body {
     // font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
     background-image: url(../images/dest/bg-content.png);
-    background-position: center bottom;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -40,9 +40,14 @@ body {
 
 }
 
-a {
+a,
+a.btn-link {
     color: #0462B1;
     text-decoration: none;
+
+    &:hover {
+        opacity: 0.8;
+    }
 }
 
 a.btn-primary {
@@ -52,8 +57,19 @@ a.btn-primary {
 .btn-primary {
     --bs-btn-bg: #0462B1;
     --bs-btn-border-color: #0462B1;
+    --bs-btn-hover-bg: #0462B1;
     --bs-btn-disabled-bg: #0462B1;
     --bs-btn-disabled-border-color: #0462B1;
+}
+
+.btn-outline-primary {
+    --bs-btn-color: #0462B1;
+    --bs-btn-border-color: #0462B1;
+    --bs-btn-hover-bg: #0462B1;
+    --bs-btn-hover-border-color: #0462B1;
+    --bs-btn-active-bg: #0462B1;
+    --bs-btn-active-border-color: #0462B1;
+    --bs-btn-disabled-color: #0462B1;
 }
 
 .btn-orange {
@@ -71,6 +87,32 @@ a.btn-primary {
     --bs-btn-disabled-color: #212529;
     --bs-btn-disabled-bg: #fd9843;
     --bs-btn-disabled-border-color: #fd9843;
+}
+
+.bg-orange {
+    background-color: #fd9843;
+}
+
+.text-orange {
+    color: #fd9843;
+}
+
+.border-orange {
+    border-color: #fd9843;
+}
+
+.text-primary {
+    color: #0462B1 !important;
+}
+
+.form-check-label.text-primary {
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.form-switch .form-check-input:checked {
+    background-color: #0462B1 !important;
 }
 
 // ======== IMPORT =============
