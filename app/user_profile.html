@@ -1,0 +1,769 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RENT-PULT.RU - Личный кабинет</title>
+    <!-- favicon.ico -->
+    <link rel="apple-touch-icon" sizes="144x144" href="images/dest/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/dest/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/dest/favicon/favicon-16x16.png">
+    <!-- <link rel="manifest" href="images/dest/favicon/site.webmanifest"> -->
+    <link rel="mask-icon" href="images/dest/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- end favicon.ico -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/fonts/opensans.css" type="text/css" charset="utf-8"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/icons-1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- @@include('includes/header.html') -->
+        <nav class="navbar navbar-main navbar-expand-lg shadow">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-uppercase" href="#">rent-pult.ru</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="offcanvas offcanvas-main offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5>
+                        <button type="button" class="btn btn-link text-light" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Главная</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">О системе</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacts.html">Контакты</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav justify-content-end flex-grow-1">
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="authorization.html"><i class="bi bi-box-arrow-in-right me-2"></i>Войти / Регистрация</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#"><i class="bi bi-person-circle me-2"></i><span class="d-inline-block d-lg-none d-xl-inline-block">eroshenkov@gmail.com</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html"><i class="bi bi-box-arrow-left me-2"></i>Выйти</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <header class="header-main py-3 mb-3">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md mb-3 mb-lg-0 d-none d-sm-block">
+                        <div class="d-flex align-items-center flex-column flex-sm-row justify-content-center justify-content-lg-start">
+                            <img src="images/dest/logo-ras.png" alt="Логотип" class="img-fluid">
+                            <h1 class="fs-2 ms-0 ms-sm-3 text-center text-lg-start">Система управления арендой</h1>
+                        </div>
+                    </div>
+                    <div class="col-sm col-lg-4">
+                        <div class="contacts d-flex flex-column text-center text-md-end">
+                            <a href="tel:+79265568904"><i class="bi bi-telephone me-2"></i>+7 (926) 556-89-04</a>
+                            <a href="mailto:arenda@rent-pult.ru"><i class="bi bi-envelope me-2"></i>arenda@rent-pult.ru</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="mb-5">
+            <div class="container">
+                <nav aria-label="breadcrumb" class="mb-4">
+                    <ol class="breadcrumb breadcrumb-sm">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Library</li>
+                    </ol>
+                </nav>
+                <h1 class="page-title">
+                    <div>Профиль пользователя</div>
+                    <a href="#" class="btn btn-outline-primary btn-sm mt-2 mt-sm-0"><i class="bi bi-arrow-left me-1"></i>Назад</a>
+                </h1>
+                <!-- <h4 class="fw-bold text-secondary mb-3">Данные пользователя</h4> -->
+                <div class="card card-object shadow-sm bg-success bg-gradient bg-opacity-10 border-0 mb-5">
+                    <div class="card-header d-flex flex-wrap align-items-center justify-content-between py-3">
+                        <div class="fs-4">eroshenkov@gmail.com</div>
+                        <div class="text-success text-nowrap">ID: 00001</div>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="btn btn-success" role="button" data-bs-toggle="modal" data-bs-target="#modalUserInfo"><i class="bi bi-plus-lg me-1"></i>Добавить данные</a>
+                        <div class="text-info small mb-2">кнопка есть пока нет данных</div>
+                        <div class="row">
+                            <div class="col-lg-7 col-xl-6 offset-xl-2 mb-3">
+                                <h5 class="fw-semibold fs-5">Личные данные</h5>
+                                <div class="card-text d-flex flex-column flex-sm-row align-items-sm-center mb-2">
+                                    <span class="text-secondary fw-bold me-2">Фамилия Имя Отчество:</span>
+                                    <span class="fs-5">Иванов Иван Иванович</span>
+                                </div>
+                                <div class="card-text d-flex flex-column flex-sm-row align-items-sm-center mb-2">
+                                    <span class="text-secondary fw-bold me-2">Дата рождения:</span>
+                                    <span class="fs-5">15.10.1981 г.</span>
+                                </div>
+                                <div class="card-text d-flex flex-column flex-sm-row align-items-sm-center mb-2">
+                                    <span class="text-secondary fw-bold me-2">Телефон:</span>
+                                    <span class="fs-5">+7 (926) 133-45-77</span>
+                                </div>
+                            </div>
+                            <!-- <div class="col-lg mb-3">
+                                <h5 class="fw-semibold fs-5">Основные функции</h5>
+                                <div class="card-text d-flex flex-row align-items-center mb-2">
+                                    <span class="text-secondary fw-bold me-2">Собственник:</span>
+                                    <span class="fs-5">да</span>
+                                </div>
+                                <div class="card-text d-flex flex-row align-items-center mb-2">
+                                    <span class="text-secondary fw-bold me-2">Управляющий:</span>
+                                    <span class="fs-5">да</span>
+                                </div>
+                                <div class="card-text d-flex flex-row align-items-center mb-2">
+                                    <span class="text-secondary fw-bold me-2">Арендатор:</span>
+                                    <span class="fs-5">да</span>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="row">
+                            <div class="col-lg offset-xl-2">
+                                <a href="#" class="btn btn-outline-success" role="button" data-bs-toggle="modal" data-bs-target="#modalUserInfo"><i class="bi bi-pencil me-1"></i>Изменить данные</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="object-status-title">
+                    <h4>Объекты в собственности</h4>
+                    <!-- <div class="form-check form-switch fs-5">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchObjectsInProperty">
+                        <label class="form-check-label text-primary" for="flexSwitchObjectsInProperty"><i class="bi bi-eye-slash" title="Скрыть"></i></label>
+                    </div> -->
+                </div>
+                <div id="objectsInProperty" class="mb-5">
+                    <div class="card card-object">
+                        <div class="row g-0">
+                            <div class="d-none d-xl-block col-xl-2 text-center">
+                                <img src="images/dest/logo-gray-256.png" class="img-fluid rounded-start" alt="plug">
+                            </div>
+                            <div class="col-md">
+                                <div class="card-object-content">
+                                    <h4 class="card-title d-flex flex-wrap align-items-center justify-content-between">
+                                        <div>Квартира на Юбилейной</div>
+                                        <div class="text-success text-nowrap small">ID: 00001-01</div>
+                                    </h4>
+                                    <div class="card-body">
+                                        <div class="row align-items-center mb-1 mb-lg-0">
+                                            <div class="col-lg-5">
+                                                <div class="card-text text-orange">
+                                                    <span class="text-secondary fw-bold me-2">Собственник:</span>
+                                                    <span>Иванов Иван Иванович</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg">
+                                                <div class="card-object-badge">
+                                                    <div class="badge-item bg-secondary bg-opacity-10">eroshenkov@gmail.com</div>
+                                                    <div class="badge-item bg-secondary bg-opacity-10">id:&nbsp;00001</div>
+                                                    <div class="badge-item bg-secondary bg-opacity-10">+79265568904</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center mb-1 mb-lg-0">
+                                            <div class="col-lg-5">
+                                                <div class="card-text">
+                                                    <span class="text-secondary fw-bold me-2">Управляющий:</span>
+                                                    <span>Петров Арсений Евгеньевич</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg">
+                                                <div class="card-object-badge">
+                                                    <div class="badge-item bg-secondary bg-opacity-10">mail@gmail.com</div>
+                                                    <div class="badge-item bg-secondary bg-opacity-10">id:&nbsp;00002</div>
+                                                    <div class="badge-item bg-secondary bg-opacity-10">+79265568904</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center mb-1 mb-lg-0">
+                                            <div class="col-lg-5">
+                                                <div class="card-text">
+                                                    <span class="text-secondary fw-bold me-2">Арендатор:</span>
+                                                    <span>Миронов Лаврентий Валерьевич</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg">
+                                                <div class="card-object-badge">
+                                                    <div class="badge-item bg-secondary bg-opacity-10">mail@gmail.com</div>
+                                                    <div class="badge-item bg-secondary bg-opacity-10">id:&nbsp;00002</div>
+                                                    <div class="badge-item bg-secondary bg-opacity-10">17.06.2021-17.06.2022</div>
+                                                    <div class="badge-item bg-secondary bg-opacity-10">+79265568904</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-object-footer">
+                                        <div class="left-actions mb-2 mb-sm-0">
+                                            <a href="object_profile.html" class="btn btn-outline-success"><i class="bi bi-gear me-1"></i>Настройки</a>
+                                            <!-- <div class="btn-group">
+                                                <button class="btn btn-outline-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Действия
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item small" href="#"><i class="bi bi-pencil me-1"></i>Изменить данные</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item small" href="#"><i class="bi bi-plus-lg me-1"></i>Добавить собственника</a></li>
+                                                    <li><a class="dropdown-item small" href="#"><i class="bi bi-plus-lg me-1"></i>Добавить управляющего</a></li>
+                                                    <li><a class="dropdown-item small" href="#"><i class="bi bi-plus-lg me-1"></i>Добавить арендатора</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item small text-danger" href="#"><i class="bi bi-x-lg me-1"></i>Удалить объект</a></li>
+                                                </ul>
+                                            </div> -->
+                                            <button class="btn btn-outline-secondary position-relative" data-bs-toggle="modal" data-bs-target="#modalObjectNotice">Уведомления
+                                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                                    99+
+                                                    <span class="visually-hidden">unread messages</span>
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <div class="right-actions">
+                                            <a href="#collapseObjInProp" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseObjInProp">Больше информации<i class="bi bi-chevron-down ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse text-bg-light" id="collapseObjInProp">
+                            <div class="card-object-collapse">
+                                <div class="row mb-3">
+                                    <div class="col-md mb-3 mb-xl-0">
+                                        <p class="fw-semibold mb-1">Характеристики объекта</p>
+                                        <div class="small">
+                                            Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Delectus quam obcaecati quos eum cum dignissimos eos. Recusandae suscipit cupiditate sit est quae, quis, quasi ea eum nesciunt vitae obcaecati nemo?
+                                        </div>
+                                    </div>
+                                    <div class="col-md mb-3 mb-xl-0">
+                                        <p class="fw-semibold mb-1">Оснащение</p>
+                                        <div class="small">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sequi dolore voluptates cupiditate dolores neque quos consectetur repellendus facilis veritatis voluptatum placeat, reprehenderit nihil voluptatibus asperiores sit recusandae architecto esse!
+                                        </div>
+                                    </div>
+                                    <div class="col-md mb-3 mb-xl-0">
+                                        <p class="fw-semibold mb-1">Аренда</p>
+                                        <div class="small">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sequi dolore voluptates cupiditate dolores neque quos consectetur repellendus facilis veritatis voluptatum placeat, reprehenderit nihil voluptatibus asperiores sit recusandae architecto esse!
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#collapseObjInProp" class="d-block text-end" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseObjInProp"><i class="bi bi-x-lg me-1"></i>Закрыть</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="object_profile.html" class="btn btn-success" role="button"><i class="bi bi-plus-lg me-1"></i>Добавить объект</a>
+                </div>
+                <div class="object-status-title">
+                    <h4>Объекты в управлении</h4>
+                    <!-- <div class="form-check form-switch fs-5">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchObjectsInManagement">
+                        <label class="form-check-label text-primary" for="flexSwitchObjectsInManagement"><i class="bi bi-eye-slash" title="Скрыть"></i></label>
+                    </div> -->
+                </div>
+                <div id="objectsInManagement" class="mb-5">
+                    <div class="card card-object">
+                        <div class="row g-0">
+                            <div class="d-none d-xl-block col-xl-2 text-center">
+                                <a href="#">
+                                    <img src="images/dest/object1.jpg" class="img-fluid rounded-start" alt="квартира">
+                                </a>
+                            </div>
+                            <div class="col-md">
+                                <div class="card-object-content">
+                                    <h4 class="card-title">Квартира родителей</h4>
+                                    <div class="card-body">
+                                        <div class="row align-items-center mb-1 mb-lg-0">
+                                            <div class="col-lg-5">
+                                                <div class="card-text">
+                                                    <span class="text-secondary fw-bold me-2">Собственник:</span>
+                                                    <span>Петров Арсений Евгеньевич</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg">
+                                                <div class="card-object-badge">
+                                                    <div class="badge-item bg-secondary bg-opacity-10">eroshenkov@gmail.com</div>
+                                                    <div class="badge-item bg-secondary bg-opacity-10">id:&nbsp;00001</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center mb-1 mb-lg-0">
+                                            <div class="col-lg-5">
+                                                <div class="card-text">
+                                                    <span class="text-secondary fw-bold me-2">Собственник:</span>
+                                                    <span>Петров Арсений Евгеньевич</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg">
+                                                <div class="card-object-badge">
+                                                    <div class="badge-item bg-secondary bg-opacity-10">eroshenkov@gmail.com</div>
+                                                    <div class="badge-item bg-secondary bg-opacity-10">id:&nbsp;00001</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center mb-1 mb-lg-0">
+                                            <div class="col-lg-5">
+                                                <div class="card-text">
+                                                    <span class="text-secondary fw-bold me-2">Собственник:</span>
+                                                    <span>Петров Арсений Евгеньевич</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg">
+                                                <div class="card-object-badge">
+                                                    <div class="badge-item bg-secondary bg-opacity-10">eroshenkov@gmail.com</div>
+                                                    <div class="badge-item bg-secondary bg-opacity-10">id:&nbsp;00001</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center mb-1 mb-lg-0">
+                                            <div class="col-lg-5">
+                                                <div class="card-text text-orange">
+                                                    <span class="text-secondary fw-bold me-2">Управляющий:</span>
+                                                    <span>Иванов Иван Иванович</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg">
+                                                <div class="card-object-badge">
+                                                    <div class="badge-item bg-secondary bg-opacity-10">mail@gmail.com</div>
+                                                    <div class="badge-item bg-secondary bg-opacity-10">id:&nbsp;00002</div>
+                                                    <div class="badge-item bg-secondary bg-opacity-10">+79265568904</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center mb-1 mb-lg-0">
+                                            <div class="col-lg-5">
+                                                <div class="card-text text-orange">
+                                                    <span class="text-secondary fw-bold me-2">Управляющий:</span>
+                                                    <span>Иванов Иван Иванович</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg">
+                                                <div class="card-object-badge">
+                                                    <div class="badge-item bg-secondary bg-opacity-10">mail@gmail.com</div>
+                                                    <div class="badge-item bg-secondary bg-opacity-10">id:&nbsp;00002</div>
+                                                    <div class="badge-item bg-secondary bg-opacity-10">+79265568904</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center mb-1 mb-lg-0">
+                                            <div class="col-lg-5">
+                                                <div class="card-text">
+                                                    <span class="text-secondary fw-bold me-2">Арендатор:</span>
+                                                    <span>Миронов Лаврентий Валерьевич</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg">
+                                                <div class="card-object-badge">
+                                                    <div class="badge-item bg-secondary bg-opacity-10">mail@gmail.com</div>
+                                                    <div class="badge-item bg-secondary bg-opacity-10">id:&nbsp;00002</div>
+                                                    <div class="badge-item bg-secondary bg-opacity-10">17.06.2021-17.06.2022</div>
+                                                    <div class="badge-item bg-secondary bg-opacity-10">+79265568904</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-object-footer">
+                                        <div class="left-actions mb-2 mb-sm-0">
+                                            <a href="object_profile.html" class="btn btn-outline-success"><i class="bi bi-gear me-1"></i>Настройки</a>
+                                            <button class="btn btn-outline-secondary position-relative" data-bs-toggle="modal" data-bs-target="#modalObjectNotice">Уведомления
+                                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                                    99+
+                                                    <span class="visually-hidden">unread messages</span>
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <div class="right-actions">
+                                            <a href="#collapseObjInManag" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseObjInManag">Больше информации<i class="bi bi-chevron-down ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse text-bg-light" id="collapseObjInManag">
+                            <div class="card-object-collapse">
+                                <div class="row mb-3">
+                                    <div class="col-md mb-3 mb-xl-0">
+                                        <p class="fw-semibold mb-1">Характеристики объекта</p>
+                                        <div class="small">
+                                            Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Delectus quam obcaecati quos eum cum dignissimos eos. Recusandae suscipit cupiditate sit est quae, quis, quasi ea eum nesciunt vitae obcaecati nemo?
+                                        </div>
+                                    </div>
+                                    <div class="col-md mb-3 mb-xl-0">
+                                        <p class="fw-semibold mb-1">Оснащение</p>
+                                        <div class="small">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sequi dolore voluptates cupiditate dolores neque quos consectetur repellendus facilis veritatis voluptatum placeat, reprehenderit nihil voluptatibus asperiores sit recusandae architecto esse!
+                                        </div>
+                                    </div>
+                                    <div class="col-md mb-3 mb-xl-0">
+                                        <p class="fw-semibold mb-1">Аренда</p>
+                                        <div class="small">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sequi dolore voluptates cupiditate dolores neque quos consectetur repellendus facilis veritatis voluptatum placeat, reprehenderit nihil voluptatibus asperiores sit recusandae architecto esse!
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#collapseObjInManag" class="d-block text-end" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseObjInManag"><i class="bi bi-x-lg me-1"></i>Закрыть</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-object">
+                        <div class="row g-0">
+                            <div class="d-none d-xl-block col-xl-2 text-center">
+                                <img src="images/dest/logo-gray-256.png" class="img-fluid rounded-start" alt="plug">
+                            </div>
+                            <div class="col-md">
+                                <div class="alternative-content pt-4">
+                                    <p class="text-orange fs-3 w-xl-75 mb-1">Хотите иметь в профиле более 3-x объектов?</p>
+                                    <p class="text-orange fs-4 w-xl-75">Это возможно за символическую плату - 100 руб/объект</p>
+                                    <div class="btn btn-orange btn-lg"><i class="bi bi-download me-2"></i>Скачать счет</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <a href="#" class="btn btn-success" role="button" data-bs-toggle="modal" data-bs-target="#modalObjectRequest"><i class="bi bi-plus-lg me-1"></i>Добавить объект</a>
+                    <div class="text-info small mb-2">только через запрос собственнику</div> -->
+                </div>
+                <div class="object-status-title">
+                    <h4>Объекты в аренде</h4>
+                    <!-- <div class="form-check form-switch fs-5">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchObjectsForRent">
+                        <label class="form-check-label text-primary" for="flexSwitchObjectsForRent"><i class="bi bi-eye-slash" title="Скрыть"></i></label>
+                    </div> -->
+                </div>
+                <div id="objectsForRent" class="mb-5">
+                    <div class="card card-object">
+                        <div class="row g-0">
+                            <div class="d-none d-xl-block col-xl-2 text-center">
+                                <img src="images/dest/logo-gray-256.png" class="img-fluid rounded-start" alt="plug">
+                            </div>
+                            <div class="col-md">
+                                <div class="card-object-content">
+                                    <h4 class="card-title">Квартира в аренду</h4>
+                                    <div class="card-body">
+                                        <div class="row align-items-center mb-1 mb-lg-0">
+                                            <div class="col-lg-5">
+                                                <div class="card-text">
+                                                    <span class="text-secondary fw-bold me-2">Собственник:</span>
+                                                    <span>Петров Арсений Евгеньевич</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg">
+                                                <div class="card-object-badge">
+                                                    <div class="badge-item bg-secondary bg-opacity-10">eroshenkov@gmail.com</div>
+                                                    <div class="badge-item bg-secondary bg-opacity-10">id:&nbsp;00001</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center mb-1 mb-lg-0">
+                                            <div class="col-lg-5">
+                                                <div class="card-text">
+                                                    <span class="text-secondary fw-bold me-2">Управляющий:</span>
+                                                    <span>Миронов Лаврентий Валерьевич</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg">
+                                                <div class="card-object-badge">
+                                                    <div class="badge-item bg-secondary bg-opacity-10">mail@gmail.com</div>
+                                                    <div class="badge-item bg-secondary bg-opacity-10">id:&nbsp;00002</div>
+                                                    <div class="badge-item bg-secondary bg-opacity-10">+79265568904</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center mb-1 mb-lg-0">
+                                            <div class="col-lg-5">
+                                                <div class="card-text text-orange">
+                                                    <span class="text-secondary fw-bold me-2">Арендатор:</span>
+                                                    <span>Иванов Иван Иванович</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg">
+                                                <div class="card-object-badge">
+                                                    <div class="badge-item bg-secondary bg-opacity-10">mail@gmail.com</div>
+                                                    <div class="badge-item bg-secondary bg-opacity-10">id:&nbsp;00002</div>
+                                                    <div class="badge-item bg-secondary bg-opacity-10">17.06.2021-17.06.2022</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-object-footer">
+                                        <div class="left-actions mb-2 mb-sm-0">
+                                            <a href="object_profile.html" class="btn btn-outline-success"><i class="bi bi-gear me-1"></i>Настройки</a>
+                                            <button class="btn btn-outline-secondary position-relative" data-bs-toggle="modal" data-bs-target="#modalObjectNotice">Уведомления
+                                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                                    99+
+                                                    <span class="visually-hidden">unread messages</span>
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <div class="right-actions">
+                                            <a href="#collapseObjForRent" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseObjForRent">Больше информации<i class="bi bi-chevron-down ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse text-bg-light" id="collapseObjForRent">
+                            <div class="card-object-collapse">
+                                <div class="row mb-3">
+                                    <div class="col-md mb-3 mb-xl-0">
+                                        <p class="fw-semibold mb-1">Характеристики объекта</p>
+                                        <div class="small">
+                                            Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Delectus quam obcaecati quos eum cum dignissimos eos. Recusandae suscipit cupiditate sit est quae, quis, quasi ea eum nesciunt vitae obcaecati nemo?
+                                        </div>
+                                    </div>
+                                    <div class="col-md mb-3 mb-xl-0">
+                                        <p class="fw-semibold mb-1">Оснащение</p>
+                                        <div class="small">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sequi dolore voluptates cupiditate dolores neque quos consectetur repellendus facilis veritatis voluptatum placeat, reprehenderit nihil voluptatibus asperiores sit recusandae architecto esse!
+                                        </div>
+                                    </div>
+                                    <div class="col-md mb-3 mb-xl-0">
+                                        <p class="fw-semibold mb-1">Аренда</p>
+                                        <div class="small">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sequi dolore voluptates cupiditate dolores neque quos consectetur repellendus facilis veritatis voluptatum placeat, reprehenderit nihil voluptatibus asperiores sit recusandae architecto esse!
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#collapseObjForRent" class="d-block text-end" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseObjForRent"><i class="bi bi-x-lg me-1"></i>Закрыть</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <a href="#" class="btn btn-success" role="button" data-bs-toggle="modal" data-bs-target="#modalObjectRequest"><i class="bi bi-plus-lg me-1"></i>Добавить объект</a>
+                    <div class="text-info small mb-2">только через запрос собственнику или управляющему</div> -->
+                </div>
+            </div>
+        </main>
+        <footer class="mt-auto">
+            <div class="container">
+                <div class="py-3 my-4">
+                    <ul class="nav justify-content-center border-bottom border-secondary pb-3 mb-3">
+                        <li class="nav-item"><a href="index.html" class="nav-link px-2">Главная</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link px-2">О системе</a></li>
+                        <li class="nav-item"><a href="contacts.html" class="nav-link px-2">Контакты</a></li>
+                    </ul>
+                    <p class="text-center">© 2022, rent-pult.ru</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="modalUserInfo" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Добавить данные</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <h5 class="fw-light fs-5">Личные данные</h5>
+                            <div class="mb-3">
+                                <label for="userFio" class="form-label">Фамилия Имя Отчество</label>
+                                <input type="text" class="form-control" id="userFio">
+                            </div>
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="mb-3">
+                                        <label for="userBirthday" class="form-label">Дата рождения</label>
+                                        <input type="date" class="form-control" id="userBirthday">
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="mb-3">
+                                        <label for="userPhone" class="form-label">Телефон</label>
+                                        <input type="text" class="form-control" id="userPhone">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" id="phoneYesNo">
+                                <label class="form-check-label text-secondary" for="phoneYesNo">Скрыть телефон для других пользователей</label>
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- <div class="mb-3">
+                            <h5 class="fw-light fs-5">Основные функции</h5>
+                            <div class="mb-3">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="funcPropYesNo" checked>
+                                    <label class="form-check-label" for="funcPropYesNo">Собственник</label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="funcManagerYesNo" checked>
+                                    <label class="form-check-label" for="funcManagerYesNo">Управляющий</label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="funcRentYesNo" checked>
+                                    <label class="form-check-label" for="funcRentYesNo">Арендатор</label>
+                                </div>
+                            </div>
+                        </div>
+                        <hr> -->
+                        <div class="mb-3">
+                            <h5 class="fw-light fs-5">Смена пароля</h5>
+                            <div class="row">
+                                <div class="col-md">
+                                    <div class="mb-3">
+                                        <label for="newPass" class="form-label">Новый пароль</label>
+                                        <input type="password" class="form-control" id="newPass">
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="mb-3">
+                                        <label for="checkPass" class="form-label">Подтвердить пароль</label>
+                                        <input type="password" class="form-control" id="checkPass">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success">Сохранить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="modal fade" id="modalObjectRequest" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Запрос на добавление объекта</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="">
+                    <div class="modal-body">
+                        <p class="text-secondary fs-5">Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Nostrum, aliquam. Vitae, autem accusantium distinctio magnam.</p>
+                        <div class="mb-3">
+                            <label for="userId" class="form-label">Кому (ID пользовтеля или Email)</label>
+                            <input type="text" class="form-control" id="userId" placeholder="ID/Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="userMessage" class="form-label">Сообщение</label>
+                            <textarea rows="2" class="form-control" id="userMessage"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div> -->
+    <div class="modal fade" id="modalObjectNotice" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Уведомления</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row align-items-center mb-3">
+                            <label for="selectFilterNotice" class="col-md-5 col-xl-4 col-form-label">Фильтр уведомлений:</label>
+                            <div class="col-9 col-md-5">
+                                <select name="filter" id="selectFilterNotice" class="form-select">
+                                    <option selected>все</option>
+                                    <option value="1">новые</option>
+                                    <option value="2">прочитанные</option>
+                                    <option value="3">последние 10</option>
+                                    <option value="4">за 30 дней</option>
+                                    <option value="5">за 3 месяца</option>
+                                    <option value="6">за 6 месяцев</option>
+                                    <option value="7">за год</option>
+                                </select>
+                            </div>
+                            <div class="col col-md">
+                                <button type="submit" class="btn btn-outline-success btn-sm"><i class="bi bi-funnel-fill"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                    <hr>
+                    <div class="card border-orange mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Запрос на аренду</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">17.06.2022 г.</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-lg">
+                                    <div class="notice-files mb-2 mb-lg-0">
+                                        <a href="#" class="mb-1 mb-sm-0 me-3 text-nowrap" target="_blank"><i class="bi bi-file-earmark-arrow-down me-1"></i>file_sdfjkl_fksk_kldfs.png</a>
+                                        <a href="#" class="mb-1 mb-sm-0 me-3 text-nowrap" target="_blank"><i class="bi bi-file-earmark-arrow-down me-1"></i>file.pdf</a>
+                                        <a href="#" class="mb-1 mb-sm-0 me-3 text-nowrap" target="_blank"><i class="bi bi-file-earmark-arrow-down me-1"></i>files.zip</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="notice-btn">
+                                        <a href="#" class="btn btn-outline-success btn-sm"><i class="bi bi-check-lg me-1"></i>Подтвердить</a>
+                                        <a href="#" class="btn btn-outline-danger btn-sm"><i class="bi bi-x-lg me-1"></i>Отклонить</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-orange mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Подтверждение оплаты</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">17.06.2022 г.</h6>
+                            <p class="card-text">Оплата за май отправлена</p>
+                            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                <div class="notice-files mb-2 mb-lg-0">
+                                    <a href="#" class="mb-1 mb-sm-0 me-3 text-nowrap" target="_blank"><i class="bi bi-file-earmark-arrow-down me-1"></i>file.pdf</a>
+                                    <a href="#" class="mb-1 mb-sm-0 me-3 text-nowrap" target="_blank"><i class="bi bi-file-earmark-arrow-down me-1"></i>files.zip</a>
+                                </div>
+                                <div class="notice-btn">
+                                    <a href="#" class="btn btn-outline-success btn-sm"><i class="bi bi-check-lg me-1"></i>Подтвердить</a>
+                                    <a href="#" class="btn btn-outline-danger btn-sm"><i class="bi bi-x-lg me-1"></i>Отклонить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card text-secondary mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Подтверждение оплаты</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">17.06.2022 г.</h6>
+                            <p class="card-text">Оплата за апрель отправлена</p>
+                            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                <div class="notice-files mb-2 mb-lg-0">
+                                    <a href="#" class="mb-1 mb-sm-0 me-3 text-nowrap" target="_blank"><i class="bi bi-file-earmark-arrow-down me-1"></i>files.zip</a>
+                                </div>
+                                <div class="notice-btn">
+                                    <small class="text-success"><i class="bi bi-check-lg me-1"></i>Подтверждено</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal" aria-label="Close">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Подключаем скрипты проекта -->
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
