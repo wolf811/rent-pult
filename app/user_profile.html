@@ -155,10 +155,10 @@
                             </div>
                             <div class="col-md">
                                 <div class="card-object-content">
-                                    <h4 class="card-title d-flex flex-wrap align-items-center justify-content-between">
-                                        <div>Квартира на Юбилейной</div>
+                                    <div class="card-title">
+                                        <h4 class="mb-1 mb-sm-0">Квартира на Юбилейной</h4>
                                         <div class="text-success text-nowrap small">ID: 00001-01</div>
-                                    </h4>
+                                    </div>
                                     <div class="card-body">
                                         <div class="row align-items-center mb-1 mb-lg-0">
                                             <div class="col-lg-5">
@@ -287,7 +287,10 @@
                             </div>
                             <div class="col-md">
                                 <div class="card-object-content">
-                                    <h4 class="card-title">Квартира родителей</h4>
+                                    <div class="card-title">
+                                        <h4 class="mb-1 mb-sm-0">Квартира родителей</h4>
+                                        <div class="text-success text-nowrap small">ID: 00012-03</div>
+                                    </div>
                                     <div class="card-body">
                                         <div class="row align-items-center mb-1 mb-lg-0">
                                             <div class="col-lg-5">
@@ -453,7 +456,10 @@
                             </div>
                             <div class="col-md">
                                 <div class="card-object-content">
-                                    <h4 class="card-title">Квартира в аренду</h4>
+                                    <div class="card-title">
+                                        <h4 class="mb-1 mb-sm-0">Квартира в аренду</h4>
+                                        <div class="text-success text-nowrap small">ID: 00107-04</div>
+                                    </div>
                                     <div class="card-body">
                                         <div class="row align-items-center mb-1 mb-lg-0">
                                             <div class="col-lg-5">
@@ -562,7 +568,7 @@
         </footer>
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="modalUserInfo" tabindex="-1" aria-hidden="true">
+    <div class="modal modal-main fade" id="modalUserInfo" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -644,7 +650,7 @@
             </div>
         </div>
     </div>
-    <!-- <div class="modal fade" id="modalObjectRequest" tabindex="-1" aria-hidden="true">
+    <!-- <div class="modal modal-main fade" id="modalObjectRequest" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -670,7 +676,7 @@
             </div>
         </div>
     </div> -->
-    <div class="modal fade" id="modalObjectNotice" tabindex="-1" aria-hidden="true">
+    <div class="modal modal-main fade" id="modalObjectNotice" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -694,62 +700,52 @@
                                 </select>
                             </div>
                             <div class="col col-md">
-                                <button type="submit" class="btn btn-outline-success btn-sm"><i class="bi bi-funnel-fill"></i></button>
+                                <button type="submit" class="btn btn-outline-success btn-sm" title="Фильтровать"><i class="bi bi-funnel-fill"></i></button>
                             </div>
                         </div>
                     </form>
                     <hr>
-                    <div class="card border-orange mb-3">
+                    <div class="card card-notice active mb-3">
                         <div class="card-body">
                             <h5 class="card-title">Запрос на аренду</h5>
                             <h6 class="card-subtitle mb-2 text-muted">17.06.2022 г.</h6>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <div class="row align-items-center justify-content-between">
-                                <div class="col-lg">
-                                    <div class="notice-files mb-2 mb-lg-0">
-                                        <a href="#" class="mb-1 mb-sm-0 me-3 text-nowrap" target="_blank"><i class="bi bi-file-earmark-arrow-down me-1"></i>file_sdfjkl_fksk_kldfs.png</a>
-                                        <a href="#" class="mb-1 mb-sm-0 me-3 text-nowrap" target="_blank"><i class="bi bi-file-earmark-arrow-down me-1"></i>file.pdf</a>
-                                        <a href="#" class="mb-1 mb-sm-0 me-3 text-nowrap" target="_blank"><i class="bi bi-file-earmark-arrow-down me-1"></i>files.zip</a>
-                                    </div>
-                                </div>
-                                <div class="col-lg">
-                                    <div class="notice-btn">
-                                        <a href="#" class="btn btn-outline-success btn-sm"><i class="bi bi-check-lg me-1"></i>Подтвердить</a>
-                                        <a href="#" class="btn btn-outline-danger btn-sm"><i class="bi bi-x-lg me-1"></i>Отклонить</a>
-                                    </div>
-                                </div>
+                            <div class="notice-files mb-2">
+                                <a href="#" class="mb-1 mb-sm-0 me-3 text-nowrap" target="_blank"><i class="bi bi-file-earmark-arrow-down me-1"></i>file_sdfjkl_fksk_kldfs.png</a>
+                                <a href="#" class="mb-1 mb-sm-0 me-3 text-nowrap" target="_blank"><i class="bi bi-file-earmark-arrow-down me-1"></i>file.pdf</a>
+                                <a href="#" class="mb-1 mb-sm-0 me-3 text-nowrap" target="_blank"><i class="bi bi-file-earmark-arrow-down me-1"></i>files.zip</a>
+                            </div>
+                            <div class="notice-btn">
+                                <a href="#" class="btn btn-outline-success btn-sm"><i class="bi bi-check-lg me-1"></i>Подтвердить</a>
+                                <a href="#" class="btn btn-outline-danger btn-sm"><i class="bi bi-x-lg me-1"></i>Отклонить</a>
                             </div>
                         </div>
                     </div>
-                    <div class="card border-orange mb-3">
+                    <div class="card card-notice active mb-3">
                         <div class="card-body">
                             <h5 class="card-title">Подтверждение оплаты</h5>
                             <h6 class="card-subtitle mb-2 text-muted">17.06.2022 г.</h6>
                             <p class="card-text">Оплата за май отправлена</p>
-                            <div class="d-flex flex-wrap align-items-center justify-content-between">
-                                <div class="notice-files mb-2 mb-lg-0">
-                                    <a href="#" class="mb-1 mb-sm-0 me-3 text-nowrap" target="_blank"><i class="bi bi-file-earmark-arrow-down me-1"></i>file.pdf</a>
-                                    <a href="#" class="mb-1 mb-sm-0 me-3 text-nowrap" target="_blank"><i class="bi bi-file-earmark-arrow-down me-1"></i>files.zip</a>
-                                </div>
-                                <div class="notice-btn">
-                                    <a href="#" class="btn btn-outline-success btn-sm"><i class="bi bi-check-lg me-1"></i>Подтвердить</a>
-                                    <a href="#" class="btn btn-outline-danger btn-sm"><i class="bi bi-x-lg me-1"></i>Отклонить</a>
-                                </div>
+                            <div class="notice-files mb-2">
+                                <a href="#" class="mb-1 mb-sm-0 me-3 text-nowrap" target="_blank"><i class="bi bi-file-earmark-arrow-down me-1"></i>file.pdf</a>
+                                <a href="#" class="mb-1 mb-sm-0 me-3 text-nowrap" target="_blank"><i class="bi bi-file-earmark-arrow-down me-1"></i>files.zip</a>
+                            </div>
+                            <div class="notice-btn">
+                                <a href="#" class="btn btn-outline-success btn-sm"><i class="bi bi-check-lg me-1"></i>Подтвердить</a>
+                                <a href="#" class="btn btn-outline-danger btn-sm"><i class="bi bi-x-lg me-1"></i>Отклонить</a>
                             </div>
                         </div>
                     </div>
-                    <div class="card text-secondary mb-3">
+                    <div class="card card-notice mb-3">
                         <div class="card-body">
                             <h5 class="card-title">Подтверждение оплаты</h5>
                             <h6 class="card-subtitle mb-2 text-muted">17.06.2022 г.</h6>
                             <p class="card-text">Оплата за апрель отправлена</p>
-                            <div class="d-flex flex-wrap align-items-center justify-content-between">
-                                <div class="notice-files mb-2 mb-lg-0">
-                                    <a href="#" class="mb-1 mb-sm-0 me-3 text-nowrap" target="_blank"><i class="bi bi-file-earmark-arrow-down me-1"></i>files.zip</a>
-                                </div>
-                                <div class="notice-btn">
-                                    <small class="text-success"><i class="bi bi-check-lg me-1"></i>Подтверждено</small>
-                                </div>
+                            <div class="notice-files mb-2 mb-lg-0">
+                                <a href="#" class="mb-1 mb-sm-0 me-3 text-nowrap" target="_blank"><i class="bi bi-file-earmark-arrow-down me-1"></i>files.zip</a>
+                            </div>
+                            <div class="notice-btn">
+                                <small class="text-success"><i class="bi bi-check-lg me-1"></i>Подтверждено</small>
                             </div>
                         </div>
                     </div>

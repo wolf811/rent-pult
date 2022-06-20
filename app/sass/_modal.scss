@@ -1,0 +1,11 @@
+.modal-main {
+
+    .card-notice {
+        color: rgba(108, 117, 125, 1);
+    }
+
+    .card-notice.active {
+        border: 1px solid #fd9843 !important;
+        color: inherit;
+    }
+}
