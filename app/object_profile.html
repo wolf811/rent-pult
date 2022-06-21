@@ -41,7 +41,16 @@
                                 <a class="nav-link" href="index.html">Главная</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="#">Квартиры</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Управление квартирами</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="about.html">О системе</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Блог</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contacts.html">Контакты</a>
@@ -90,11 +99,11 @@
                     </ol>
                 </nav>
                 <h1 class="page-title">
-                    <div>Название объекта</div>
+                    <div>Профиль объекта</div>
                     <a href="user_profile.html" class="btn btn-outline-primary btn-sm mt-2 mt-sm-0"><i class="bi bi-arrow-left me-1"></i>Назад</a>
                 </h1>
                 <div class="row">
-                    <div class="col-lg-3 sticky-lg-top">
+                    <div class="col-lg-3">
                         <nav class="navbar-object navbar-expand-lg bg-light shadow-sm">
                             <div class="container">
                                 <a href="#" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarObject" aria-controls="navbarObject" aria-expanded="false" aria-label="Toggle navigation">
@@ -109,7 +118,10 @@
                                             <a class="nav-link fs-5 active" href="#common-data" id="common-data-list" data-bs-toggle="list" role="tab" aria-controls="common-data">Общие данные</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link fs-5" href="#communal-services" id="communal-services-list" data-bs-toggle="list" role="tab" aria-controls="communal-services">ЖКХ</a>
+                                            <a class="nav-link fs-5" href="#docs-object" id="docs-object-list" data-bs-toggle="list" role="tab" aria-controls="docs-object">Документы</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link fs-5" href="#communal-services" id="communal-services-list" data-bs-toggle="list" role="tab" aria-controls="communal-services">Коммунальные платежи</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link fs-5" href="#managers" id="managers-list" data-bs-toggle="list" role="tab" aria-controls="managers">Управляющие</a>
@@ -126,7 +138,7 @@
                         </nav>
                     </div>
                     <div class="col-lg">
-                        <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-content" id="nav-objectProfileContent">
                             <div class="tab-pane fade show active" id="common-data" role="tabpanel" aria-labelledby="common-data-list">
                                 <div class="card card-object border-0 shadow-sm">
                                     <div class="card-header bg-light d-flex flex-wrap align-items-center justify-content-between py-3">
@@ -134,107 +146,360 @@
                                         <div class="text-success text-nowrap">ID: 00001-01</div>
                                     </div>
                                     <div class="card-body">
-                                        <form action="">
-                                            <fieldset class="py-3">
-                                                <div class="row mb-3">
-                                                    <label for="" class="col-md-4 col-form-label fw-semibold">Название объекта<span class="text-danger ms-1">*</span></label>
-                                                    <div class="col-sm col-xl-6">
-                                                        <input type="text" class="form-control" id="" required>
+                                        <div id="generalInfo" class="bg-light mb-4">
+                                            <div class="border-bottom">
+                                                <div class="row p-2">
+                                                    <div class="col-md-4 fw-semibold">
+                                                        Название объекта
+                                                    </div>
+                                                    <div class="col-sm">
+                                                        Квартира на Юбилейной
                                                     </div>
                                                 </div>
-                                                <div class="row mb-3">
-                                                    <label for="" class="col-md-4 col-form-label">Адрес объекта</label>
-                                                    <div class="col-sm col-xl-6">
-                                                        <input type="text" class="form-control" id="">
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-3">
-                                                    <label for="" class="col-md-4 col-form-label">Этаж / подъезд</label>
-                                                    <div class="col-sm col-xl-3 mb-3 mb-sm-0">
-                                                        <input type="number" class="form-control" id="" placeholder="№ этажа">
-                                                    </div>
-                                                    <div class="col-sm col-xl-3">
-                                                        <input type="number" class="form-control" id="" placeholder="№ подъезда">
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-3">
-                                                    <label for="" class="col-md-4 col-form-label">Кол-во комнат / площадь</label>
-                                                    <div class="col-sm col-xl-3 mb-3 mb-sm-0">
-                                                        <input type="number" class="form-control" id="">
-                                                    </div>
-                                                    <div class="col-sm col-xl-3">
-                                                        <input type="number" class="form-control" id="">
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-3">
-                                                    <label for="" class="col-md-4 col-form-label">Сан.узел / балкон</label>
-                                                    <div class="col-sm col-xl-3 mb-3 mb-sm-0">
-                                                        <select class="form-select" aria-label="Default select example">
-                                                            <option selected>-</option>
-                                                            <option value="1">раздельный</option>
-                                                            <option value="2">совмещенный</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-sm col-xl-3">
-                                                        <select class="form-select" aria-label="Default select example">
-                                                            <option selected>-</option>
-                                                            <option value="1">балкон</option>
-                                                            <option value="2">лоджия</option>
-                                                            <option value="3">нет</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-3">
-                                                    <label for="" class="col-md-4 col-form-label">Сан.узел / балкон</label>
-                                                    <div class="col-sm col-xl-3 mb-3 mb-sm-0">
-                                                        <select class="form-select" aria-label="Default select example">
-                                                            <option selected>-</option>
-                                                            <option value="1">раздельный</option>
-                                                            <option value="2">совмещенный</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-sm col-xl-3">
-                                                        <select class="form-select" aria-label="Default select example">
-                                                            <option selected>-</option>
-                                                            <option value="1">балкон</option>
-                                                            <option value="2">лоджия</option>
-                                                            <option value="3">нет</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <hr>
-                                                <div class="row mb-3 align-items-center">
-                                                    <label for="" class="col-md-4 col-form-label">Фото объекта 1</label>
-                                                    <div class="col-10 col-sm-7 col-xl-6">
-                                                        <input class="form-control" type="file" id="formFile">
-                                                    </div>
-                                                    <div class="col">
-                                                        <a href="#" class="btn btn-outline-danger btn-sm"><i class="bi bi-x-lg"></i></a>
-                                                    </div>
-                                                </div>
-                                            </fieldset>
-                                            <button class="btn btn-primary"><i class="bi bi-save me-1"></i>Сохранить</button>
-                                            <button class="btn btn-outline-primary"><i class="bi bi-pencil me-1"></i>Редактировть</button>
-                                        </form>
-                                        <!-- <div class="row">
-                                            <div class="col-lg">
-                                                <a href="#" class="btn btn-outline-success" role="button" data-bs-toggle="modal" data-bs-target="#modalUserInfo"><i class="bi bi-pencil me-1"></i>Изменить данные</a>
                                             </div>
-                                        </div> -->
+                                            <div class="border-bottom">
+                                                <div class="row p-2">
+                                                    <div class="col-md-4 fw-semibold">
+                                                        Адрес объекта
+                                                    </div>
+                                                    <div class="col-sm">
+                                                        Московская обл., г. Подольск, Юбилейная площадь, д. 5, 18
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="border-bottom">
+                                                <div class="row p-2">
+                                                    <div class="col-md-4 fw-semibold">
+                                                        Этаж / подъезд
+                                                    </div>
+                                                    <div class="col-sm">
+                                                        7 / 3
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="border-bottom">
+                                                <div class="row p-2">
+                                                    <div class="col-md-4 fw-semibold">
+                                                        Кол-во комнат / площадь
+                                                    </div>
+                                                    <div class="col-sm">
+                                                        1 / 40 м<sup>2</sup>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="fotosObject" class="mb-4">
+                                            <div class="row row-cols-2 row-cols-md-3 row-cols-xl-4 g-4">
+                                                <div class="col">
+                                                    <div class="card h-100">
+                                                        <a href="#">
+                                                            <img src="images/dest/logo-gray-256.png" class="card-img-top" alt="foto">
+                                                        </a>
+                                                        <!-- <img src="images/dest/logo-gray-256.png" class="img-fluid rounded-start" alt="plug"> -->
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card h-100">
+                                                        <a href="#">
+                                                            <img src="images/dest/logo-gray-256.png" class="card-img-top" alt="foto">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card h-100">
+                                                        <a href="#">
+                                                            <img src="images/dest/logo-gray-256.png" class="card-img-top" alt="foto">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card h-100">
+                                                        <a href="#">
+                                                            <img src="images/dest/logo-gray-256.png" class="card-img-top" alt="foto">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="btn btn-outline-success mb-2" data-bs-toggle="collapse" href="#formAddGeneralInfo" role="button" aria-expanded="false" aria-controls="formAddGeneralInfo"><i class="bi bi-plus-lg me-1"></i>Добавить</a>
+                                        <a class="btn btn-outline-success mb-2" data-bs-toggle="collapse" href="#formAddGeneralInfo" role="button" aria-expanded="false" aria-controls="formAddGeneralInfo"><i class="bi bi-pencil me-1"></i>Редактировть</a>
+                                        <small class="text-info small ms-2">варианты кнопок в зависимости от наличия данных</small>
+                                        <div class="collapse" id="formAddGeneralInfo">
+                                            <div class="card card-body rounded-0">
+                                                <form action="">
+                                                    <fieldset class="py-3">
+                                                        <div class="row mb-3">
+                                                            <label for="" class="col-md-4 col-form-label fw-semibold">Название объекта<span class="text-danger ms-1">*</span></label>
+                                                            <div class="col-sm col-xl-6">
+                                                                <input type="text" class="form-control" id="" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <label for="" class="col-md-4 col-form-label">Адрес объекта</label>
+                                                            <div class="col-sm col-xl-6">
+                                                                <input type="text" class="form-control" id="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <label for="" class="col-md-4 col-form-label">Этаж / подъезд</label>
+                                                            <div class="col-sm col-xl-3 mb-3 mb-sm-0">
+                                                                <input type="number" class="form-control" id="" placeholder="№ этажа">
+                                                            </div>
+                                                            <div class="col-sm col-xl-3">
+                                                                <input type="number" class="form-control" id="" placeholder="№ подъезда">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <label for="" class="col-md-4 col-form-label">Кол-во комнат / площадь</label>
+                                                            <div class="col-sm col-xl-3 mb-3 mb-sm-0">
+                                                                <input type="number" class="form-control" id="">
+                                                            </div>
+                                                            <div class="col-sm col-xl-3">
+                                                                <input type="number" class="form-control" id="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <label for="" class="col-md-4 col-form-label">Сан.узел / балкон</label>
+                                                            <div class="col-sm col-xl-3 mb-3 mb-sm-0">
+                                                                <select class="form-select" aria-label="Default select example">
+                                                                    <option selected>-</option>
+                                                                    <option value="1">раздельный</option>
+                                                                    <option value="2">совмещенный</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-sm col-xl-3">
+                                                                <select class="form-select" aria-label="Default select example">
+                                                                    <option selected>-</option>
+                                                                    <option value="1">балкон</option>
+                                                                    <option value="2">лоджия</option>
+                                                                    <option value="3">нет</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="row mb-3 align-items-center">
+                                                            <label for="" class="col-md-4 col-form-label">Фото объекта 1</label>
+                                                            <div class="col-10 col-md-6">
+                                                                <input class="form-control" type="file" id="formFile">
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <a href="#" class="btn btn-outline-danger btn-sm"><i class="bi bi-x-lg"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="offset-md-4 col-md">
+                                                                <a href="#" class="btn btn-outline-primary btn-sm"><i class="bi bi-plus-lg me-1"></i>Добавить фото</a>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                    </fieldset>
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <div>
+                                                            <button class="btn btn-primary" type="button" disabled>
+                                                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                                                Сохраняем...
+                                                            </button>
+                                                            <button type="submit" class="btn btn-primary"><i class="bi bi-save me-1"></i>Сохранить</button>
+                                                            <a href="#formAddGeneralInfo" class="btn btn-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="formAddGeneralInfo">Закрыть</a>
+                                                        </div>
+                                                        <div class="text-success text-nowrap"><i class="bi bi-check-lg me-1"></i>Сохранено</div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="docs-object" role="tabpanel" aria-labelledby="docs-object-list">
+                                <div class="card card-object border-0 shadow-sm">
+                                    <div class="card-header bg-light d-flex flex-wrap align-items-center justify-content-between py-3">
+                                        <div class="fw-light fs-4">Документы</div>
+                                        <div class="text-success text-nowrap">ID: 00001-01</div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive mb-2">
+                                            <table class="table table-light">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">Дата</th>
+                                                        <th scope="col">Документ</th>
+                                                        <th scope="col">Комментарий</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#" class="text-danger btn-sm" title="Удалить"><i class="bi bi-x-lg"></i></td>
+                                                        <td>12.05.2022</td>
+                                                        <td><a href="#" target="_blank">документ о собственности</a></td>
+                                                        <td>выписка из ЕГРН от сентября 2020</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#" class="text-danger btn-sm" title="Удалить"><i class="bi bi-x-lg"></i></td>
+                                                        <td>03.07.2021</td>
+                                                        <td><a href="#" target="_blank">выписка из домовой книги</a></td>
+                                                        <td>выписка от сентября 2020</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <a class="btn btn-outline-success mb-2" data-bs-toggle="collapse" href="#formAddDocs" role="button" aria-expanded="false" aria-controls="formAddDocs"><i class="bi bi-plus-lg me-1"></i>Добавить</a>
+                                        <div class="collapse" id="formAddDocs">
+                                            <div class="card card-body rounded-0">
+                                                <form action="">
+                                                    <fieldset class="py-3">
+                                                        <div class="row mb-3">
+                                                            <label for="dateLoadDoc" class="col-md-4 col-form-label">Дата</label>
+                                                            <div class="col-sm-3">
+                                                                <input class="form-control" type="date" id="dateLoadDoc">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <label for="nameDoc" class="col-md-4 col-form-label">Название документа</label>
+                                                            <div class="col-sm col-xl-6">
+                                                                <input class="form-control" type="text" id="nameDoc">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <label for="fileDoc" class="col-md-4 col-form-label">Файл документа</label>
+                                                            <div class="col-sm col-xl-6">
+                                                                <input class="form-control" type="file" id="fileDoc">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <label for="commentDoc" class="col-md-4 col-form-label">Комментарий</label>
+                                                            <div class="col-sm col-xl-6">
+                                                                <textarea name="" id="commentDoc" rows="2" class="form-control"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <div>
+                                                            <button class="btn btn-primary" type="button" disabled>
+                                                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                                                Сохраняем...
+                                                            </button>
+                                                            <button type="submit" class="btn btn-primary"><i class="bi bi-save me-1"></i>Сохранить</button>
+                                                            <a href="#formAddDocs" class="btn btn-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="formAddDocs">Закрыть</a>
+                                                        </div>
+                                                        <div class="text-success text-nowrap"><i class="bi bi-check-lg me-1"></i>Сохранено</div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="communal-services" role="tabpanel" aria-labelledby="communal-services-list">
-                                2
+                                <div class="card card-object border-0 shadow-sm">
+                                    <div class="card-header bg-light d-flex flex-wrap align-items-center justify-content-between py-3">
+                                        <div class="fw-light fs-4">Коммунальные платежи</div>
+                                        <div class="text-success text-nowrap">ID: 00001-01</div>
+                                    </div>
+                                    <div class="card-body">
+                                        <nav class="mb-4">
+                                            <div class="nav nav-tabs" id="nav-communalServicesTabs" role="tablist">
+                                                <button class="nav-link active" id="paymentCommunalServices-tab" data-bs-toggle="tab" data-bs-target="#paymentCommunalServices" type="button" role="tab" aria-controls="paymentCommunalServices" aria-selected="true">Оплата коммунальных услуг</button>
+                                                <button class="nav-link" id="readingCounters-tab" data-bs-toggle="tab" data-bs-target="#readingCounters" type="button" role="tab" aria-controls="readingCounters" aria-selected="false">Показания счётчиков</button>
+                                                <button class="nav-link" id="usefulLinks-tab" data-bs-toggle="tab" data-bs-target="#usefulLinks" type="button" role="tab" aria-controls="usefulLinks" aria-selected="false">Полезные ссылки</button>
+                                            </div>
+                                        </nav>
+                                        <div class="tab-content" id="nav-communalServicesContent">
+                                            <div class="tab-pane fade show active" id="paymentCommunalServices" role="tabpanel" aria-labelledby="paymentCommunalServices-tab" tabindex="0">
+                                                <div class="table-responsive mb-2">
+                                                    <table class="table table-light">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">#</th>
+                                                                <th scope="col">Дата</th>
+                                                                <th scope="col">Сумма платежа</th>
+                                                                <th scope="col">Файлы</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><a href="#" class="text-danger btn-sm" title="Удалить"><i class="bi bi-x-lg"></i></td>
+                                                                <td>12.05.2022</td>
+                                                                <td>7510.00 руб.</td>
+                                                                <td>
+                                                                    <a href="#" class="mb-1 mb-sm-0 me-3 text-nowrap" target="_blank"><i class="bi bi-file-earmark-arrow-down me-1"></i>file_payment.pdf</a>
+                                                                    <a href="#" class="mb-1 mb-sm-0 me-3 text-nowrap" target="_blank"><i class="bi bi-file-earmark-arrow-down me-1"></i>file_receipt.pdf</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#" class="text-danger btn-sm" title="Удалить"><i class="bi bi-x-lg"></i></td>
+                                                                <td>03.07.2021</td>
+                                                                <td>7510.00 руб.</td>
+                                                                <td>
+                                                                    <a href="#" class="mb-1 mb-sm-0 me-3 text-nowrap" target="_blank"><i class="bi bi-file-earmark-arrow-down me-1"></i>file_payment_receipt.zip</a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <a class="btn btn-outline-success mb-2" data-bs-toggle="collapse" href="#formPaymentUtilityServices" role="button" aria-expanded="false" aria-controls="formPaymentUtilityServices"><i class="bi bi-plus-lg me-1"></i>Добавить</a>
+                                                <div class="collapse" id="formPaymentUtilityServices">
+                                                    <div class="card card-body rounded-0">
+                                                        <form action="">
+                                                            <fieldset class="py-3">
+                                                                <div class="row mb-3">
+                                                                    <label for="paymentDate" class="col-md-4 col-form-label">Дата</label>
+                                                                    <div class="col-sm-3">
+                                                                        <input class="form-control" type="date" id="paymentDate">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row mb-3">
+                                                                    <label for="amountPayment" class="col-md-4 col-form-label">Сумма платежа</label>
+                                                                    <div class="col-sm col-xl-6">
+                                                                        <input class="form-control" type="text" id="amountPayment">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row mb-3 align-items-center">
+                                                                    <label for="" class="col-md-4 col-form-label">Файл(-ы) оплаты</label>
+                                                                    <div class="col-10 col-md-6">
+                                                                        <input class="form-control" type="file" id="paymentFiles">
+                                                                    </div>
+                                                                    <div class="col-2">
+                                                                        <a href="#" class="btn btn-outline-danger btn-sm"><i class="bi bi-x-lg"></i></a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row mb-3">
+                                                                    <div class="offset-md-4 col-md">
+                                                                        <a href="#" class="btn btn-outline-primary btn-sm"><i class="bi bi-plus-lg me-1"></i>Добавить файл</a>
+                                                                    </div>
+                                                                </div>
+                                                            </fieldset>
+                                                            <div class="d-flex align-items-center justify-content-between">
+                                                                <div>
+                                                                    <button class="btn btn-primary" type="button" disabled>
+                                                                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                                                        Сохраняем...
+                                                                    </button>
+                                                                    <button type="submit" class="btn btn-primary"><i class="bi bi-save me-1"></i>Сохранить</button>
+                                                                    <a href="#formPaymentUtilityServices" class="btn btn-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="formPaymentUtilityServices">Закрыть</a>
+                                                                </div>
+                                                                <div class="text-success text-nowrap"><i class="bi bi-check-lg me-1"></i>Сохранено</div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="readingCounters" role="tabpanel" aria-labelledby="readingCounters-tab" tabindex="0">
+                                                Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Dicta asperiores repellat quas iste incidunt ab eligendi distinctio, facilis at eum sapiente mollitia voluptatem optio quam voluptatibus aspernatur nobis pariatur sunt.
+                                            </div>
+                                            <div class="tab-pane fade" id="usefulLinks" role="tabpanel" aria-labelledby="usefulLinks-tab" tabindex="0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus repudiandae cumque quae doloremque enim architecto quam, perspiciatis nulla vitae dignissimos iure, sed recusandae! Labore aliquid quam debitis ut cupiditate mollitia!</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="tab-pane fade" id="managers" role="tabpanel" aria-labelledby="managers-list">
-                                3
+                                Управляющие
                             </div>
                             <div class="tab-pane fade" id="tenants" role="tabpanel" aria-labelledby="tenants-list">
-                                4
+                                Арендаторы
                             </div>
                             <div class="tab-pane fade" id="notification-settings" role="tabpanel" aria-labelledby="notification-settings-list">
-                                5
+                                Настройка уведомлений
                             </div>
                         </div>
                     </div>
@@ -245,9 +510,24 @@
             <div class="container">
                 <div class="py-3 my-4">
                     <ul class="nav justify-content-center border-bottom border-secondary pb-3 mb-3">
-                        <li class="nav-item"><a href="index.html" class="nav-link px-2">Главная</a></li>
-                        <li class="nav-item"><a href="about.html" class="nav-link px-2">О системе</a></li>
-                        <li class="nav-item"><a href="contacts.html" class="nav-link px-2">Контакты</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Квартиры</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Управление квартирами</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">О системе</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Блог</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Контакты</a>
+                        </li>
                     </ul>
                     <p class="text-center">© 2022, rent-pult.ru</p>
                 </div>
