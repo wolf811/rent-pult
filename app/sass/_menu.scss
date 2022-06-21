@@ -35,15 +35,20 @@
 
         .nav-link {
             padding: 1rem;
-            color: #DCDDDF;
+            color: rgba(220, 221, 223, 1);
+            white-space: nowrap;
+
+            @media (min-width: 992px) and (max-width: 1600px) {
+                padding: 1rem 0.5rem;
+            }
 
             &:hover {
                 transition: 0.3s;
-                background-color: #666666;
-                // color: #fff;
+                background-color: rgba(102, 102, 102, 1);
+                // color: rgba(255, 255, 255, 1);
 
                 @media (max-width: 991px) {
-                    background-color: #eee;
+                    background-color: rgba(238, 238, 238, 1);
                 }
             }
 
