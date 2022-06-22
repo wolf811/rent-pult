@@ -87,6 +87,16 @@
             font-weight: 600;
         }
     }
+
+    .nav-tabs {
+        .nav-link {
+            color: #0462B1;
+
+            &:hover {
+                color: #0a58ca;
+            }
+        }
+    }
 }
 
 

@@ -22,7 +22,7 @@
 
 <body>
     <div class="wrapper">
-        
+        <!-- @@include('includes/header.html') -->
         <nav class="navbar navbar-main navbar-expand-lg shadow">
             <div class="container">
                 <a class="navbar-brand fw-bold text-uppercase" href="#">rent-pult.ru</a>
@@ -37,7 +37,7 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">Главная</a>
+                                <a class="nav-link active" href="index.html">Главная</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Квартиры</a>
@@ -52,7 +52,7 @@
                                 <a class="nav-link" href="#">Блог</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="contacts.html">Контакты</a>
+                                <a class="nav-link" href="contacts.html">Контакты</a>
                             </li>
                         </ul>
                         <ul class="navbar-nav justify-content-end flex-grow-1">
@@ -83,18 +83,20 @@
             </div>
         </header>
         <main class="mb-5">
-            <div class="container">
-                <nav aria-label="breadcrumb" class="text-sm mb-4">
-                    <ol class="breadcrumb breadcrumb-sm">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Library</li>
-                    </ol>
-                </nav>
-                <h1 class="page-title">
-                    <div>Контакты</div>
-                </h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aut, modi labore ad dolor, deserunt quam facilis ipsum laudantium provident nostrum quod alias ducimus. Aliquid ipsum minus magni ipsa delectus, et laborum nemo vel odit soluta blanditiis dicta earum architecto provident veniam consectetur id debitis molestiae amet excepturi eos! Delectus, reiciendis quidem molestiae libero. Illo repellat magni at iusto odio ea dolorem cum fugit est, error et modi recusandae aperiam quos vero corrupti nihil optio cumque distinctio fuga vitae, voluptate? Reprehenderit debitis iure est quia nihil facilis. Sed error unde impedit, accusantium voluptatem rem quibusdam asperiores, omnis, corrupti eaque laudantium?</p>
-            </div>
+            {% block content %}
+            <!-- <div class="container">
+    <nav aria-label="breadcrumb" class="text-sm mb-4">
+        <ol class="breadcrumb breadcrumb-sm">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol>
+    </nav>
+    <h1 class="page-title">
+        <div>Главная</div>
+    </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aut, modi labore ad dolor, deserunt quam facilis ipsum laudantium provident nostrum quod alias ducimus. Aliquid ipsum minus magni ipsa delectus, et laborum nemo vel odit soluta blanditiis dicta earum architecto provident veniam consectetur id debitis molestiae amet excepturi eos! Delectus, reiciendis quidem molestiae libero. Illo repellat magni at iusto odio ea dolorem cum fugit est, error et modi recusandae aperiam quos vero corrupti nihil optio cumque distinctio fuga vitae, voluptate? Reprehenderit debitis iure est quia nihil facilis. Sed error unde impedit, accusantium voluptatem rem quibusdam asperiores, omnis, corrupti eaque laudantium?</p>
+</div> -->
+            {% endblock %}
         </main>
         <footer class="mt-auto">
             <div class="container">

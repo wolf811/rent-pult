@@ -30,10 +30,7 @@
 	const del = require('del');
 
 	// Подключаем gulp-file-include для вставки кусков кода, переменных и прочее. Добавлен отдельно 16.06.2022
-	// const fileinclude = require('gulp-file-include');
-	// const gulp = require('gulp');
-
-
+	const fileinclude = require('gulp-file-include');
 
 	// Определяем логику работы Browsersync
 	function browsersync() {
@@ -99,24 +96,19 @@
 	    return del('dist/**/*', { force: true }) // Удаляем все содержимое папки "dist/"
 	}
 
-	// function include() {
-	//     return src(['app/index.html'])
-	//         .pipe(fileinclude({
-	//             prefix: '@@',
-	//             basepath: 'app'
-	//         }))
-	//         // .pipe(plugins.fileInclude())
-	//         .pipe(dest('dist'))
-	// }
+	function include() {
+	    return src(['app/*.html'])
+	        .pipe(fileinclude({
+	            prefix: '@@',
+	            basepath: '@file'
+	        }))
+	        .pipe(dest('dist'));
+	}
 
-	// gulp.task('fileinclude', function() {
-	//     gulp.src(['app/includes/*.html'])
-	//         .pipe(fileinclude({
-	//             prefix: '@@',
-	//             basepath: '@file'
-	//         }))
-	//         .pipe(gulp.dest('dist'));
-	// });
+	function browserSyncReload(done) {
+	    browserSync.reload();
+	    done();
+	};
 
 	function startwatch() {
 
@@ -126,11 +118,16 @@
 	    // Мониторим файлы препроцессора на изменения
 	    watch('app/**/' + preprocessor + '/**/*', styles);
 
+	    // Мониторим шаблоны HTML  - НЕ РАБОТАЕТ!!!!!!!!!
+	    watch('app/**/*.html', include);
+	    // watch('app/**/*.html', include, browserSyncReload);
+
 	    // Мониторим файлы HTML на изменения
 	    watch('app/**/*.html').on('change', browserSync.reload);
 
 	    // Мониторим папку-источник изображений и выполняем images(), если есть изменения
 	    watch('app/images/src/**/*', images);
+
 
 	}
 
@@ -146,18 +143,18 @@
 	// Экспорт функции images() в таск images
 	exports.images = images;
 
+	// Экспортируем функцию fileinclude() как таск include
+	exports.include = include;
+
 	// Экспортируем функцию cleanimg() как таск cleanimg
 	exports.cleanimg = cleanimg;
 
-	// Экспортируем функцию fileinclude() как таск cleanimg
-	// exports.include = include;
-
 	// Создаем новый таск "build", который последовательно выполняет нужные операции
-	exports.build = series(cleandist, styles, scripts, images, buildcopy);
+	exports.build = series(cleandist, styles, scripts, images, include, buildcopy);
 	// exports.build = series(include, cleandist, styles, scripts, images, buildcopy);
 
 	// Экспортируем дефолтный таск с нужным набором функций
-	exports.default = parallel(styles, scripts, browsersync, startwatch);
+	exports.default = parallel(styles, scripts, browsersync, startwatch, include);
 
 	/*
 	Команды gulp:

@@ -93,8 +93,8 @@
             <div class="container">
                 <nav aria-label="breadcrumb" class="mb-4">
                     <ol class="breadcrumb breadcrumb-sm">
-                        <li class="breadcrumb-item"><a href="#">Главная</a></li>
-                        <li class="breadcrumb-item"><a href="#">Профиль пользователя</a></li>
+                        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                        <li class="breadcrumb-item"><a href="user_profile.html">Личный кабинет</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Профиль объекта</li>
                     </ol>
                 </nav>
@@ -121,7 +121,7 @@
                                             <a class="nav-link fs-5" href="#docs-object" id="docs-object-list" data-bs-toggle="list" role="tab" aria-controls="docs-object">Документы</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link fs-5" href="#communal-services" id="communal-services-list" data-bs-toggle="list" role="tab" aria-controls="communal-services">Коммунальные платежи</a>
+                                            <a class="nav-link fs-5" href="#communal-services" id="communal-services-list" data-bs-toggle="list" role="tab" aria-controls="communal-services">Коммунальные услуги</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link fs-5" href="#managers" id="managers-list" data-bs-toggle="list" role="tab" aria-controls="managers">Управляющие</a>
@@ -131,6 +131,9 @@
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link fs-5" href="#notification-settings" id="notification-settings-list" data-bs-toggle="list" role="tab" aria-controls="notification-settings">Настройка уведомлений</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link fs-5" href="#other-info" id="other-info-list" data-bs-toggle="list" role="tab" aria-controls="other-info">Прочая информация</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -318,7 +321,7 @@
                                     </div>
                                     <div class="card-body">
                                         <div class="table-responsive mb-2">
-                                            <table class="table table-light">
+                                            <table class="table table-light small">
                                                 <thead>
                                                     <tr>
                                                         <th scope="col">#</th>
@@ -393,26 +396,26 @@
                             <div class="tab-pane fade" id="communal-services" role="tabpanel" aria-labelledby="communal-services-list">
                                 <div class="card card-object border-0 shadow-sm">
                                     <div class="card-header bg-light d-flex flex-wrap align-items-center justify-content-between py-3">
-                                        <div class="fw-light fs-4">Коммунальные платежи</div>
+                                        <div class="fw-light fs-4">Коммунальные услуги</div>
                                         <div class="text-success text-nowrap">ID: 00001-01</div>
                                     </div>
                                     <div class="card-body">
                                         <nav class="mb-4">
                                             <div class="nav nav-tabs" id="nav-communalServicesTabs" role="tablist">
-                                                <button class="nav-link active" id="paymentCommunalServices-tab" data-bs-toggle="tab" data-bs-target="#paymentCommunalServices" type="button" role="tab" aria-controls="paymentCommunalServices" aria-selected="true">Оплата коммунальных услуг</button>
+                                                <button class="nav-link active" id="paymentCommunalServices-tab" data-bs-toggle="tab" data-bs-target="#paymentCommunalServices" type="button" role="tab" aria-controls="paymentCommunalServices" aria-selected="true">Платежи</button>
                                                 <button class="nav-link" id="readingCounters-tab" data-bs-toggle="tab" data-bs-target="#readingCounters" type="button" role="tab" aria-controls="readingCounters" aria-selected="false">Показания счётчиков</button>
-                                                <button class="nav-link" id="usefulLinks-tab" data-bs-toggle="tab" data-bs-target="#usefulLinks" type="button" role="tab" aria-controls="usefulLinks" aria-selected="false">Полезные ссылки</button>
+                                                <!-- <button class="nav-link" id="usefulLinks-tab" data-bs-toggle="tab" data-bs-target="#usefulLinks" type="button" role="tab" aria-controls="usefulLinks" aria-selected="false">Полезные ссылки</button> -->
                                             </div>
                                         </nav>
                                         <div class="tab-content" id="nav-communalServicesContent">
                                             <div class="tab-pane fade show active" id="paymentCommunalServices" role="tabpanel" aria-labelledby="paymentCommunalServices-tab" tabindex="0">
                                                 <div class="table-responsive mb-2">
-                                                    <table class="table table-light">
+                                                    <table class="table table-light small">
                                                         <thead>
                                                             <tr>
                                                                 <th scope="col">#</th>
                                                                 <th scope="col">Дата</th>
-                                                                <th scope="col">Сумма платежа</th>
+                                                                <th scope="col">Сумма</th>
                                                                 <th scope="col">Файлы</th>
                                                             </tr>
                                                         </thead>
@@ -420,7 +423,7 @@
                                                             <tr>
                                                                 <td><a href="#" class="text-danger btn-sm" title="Удалить"><i class="bi bi-x-lg"></i></td>
                                                                 <td>12.05.2022</td>
-                                                                <td>7510.00 руб.</td>
+                                                                <td class="text-nowrap">7510.00 руб.</td>
                                                                 <td>
                                                                     <a href="#" class="mb-1 mb-sm-0 me-3 text-nowrap" target="_blank"><i class="bi bi-file-earmark-arrow-down me-1"></i>file_payment.pdf</a>
                                                                     <a href="#" class="mb-1 mb-sm-0 me-3 text-nowrap" target="_blank"><i class="bi bi-file-earmark-arrow-down me-1"></i>file_receipt.pdf</a>
@@ -429,7 +432,7 @@
                                                             <tr>
                                                                 <td><a href="#" class="text-danger btn-sm" title="Удалить"><i class="bi bi-x-lg"></i></td>
                                                                 <td>03.07.2021</td>
-                                                                <td>7510.00 руб.</td>
+                                                                <td class="text-nowrap">7510.00 руб.</td>
                                                                 <td>
                                                                     <a href="#" class="mb-1 mb-sm-0 me-3 text-nowrap" target="_blank"><i class="bi bi-file-earmark-arrow-down me-1"></i>file_payment_receipt.zip</a>
                                                                 </td>
@@ -485,9 +488,85 @@
                                                 </div>
                                             </div>
                                             <div class="tab-pane fade" id="readingCounters" role="tabpanel" aria-labelledby="readingCounters-tab" tabindex="0">
-                                                Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Dicta asperiores repellat quas iste incidunt ab eligendi distinctio, facilis at eum sapiente mollitia voluptatem optio quam voluptatibus aspernatur nobis pariatur sunt.
+                                                <a class="btn btn-outline-success btn-sm mb-2"><i class="bi bi-plus-lg me-1"></i>Перечень счетчиков</a>
+                                                <small class="text-info">возможно придется изменить таблицу на вертикальную</small>
+                                                <div class="table-responsive mb-2">
+                                                    <table class="table table-light small">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">#</th>
+                                                                <th scope="col">Месяц</th>
+                                                                <th scope="col">Свет</th>
+                                                                <th scope="col">ХВС</th>
+                                                                <th scope="col">ГВС</th>
+                                                                <th scope="col">Газ</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <a href="#" class="text-success"><i class="bi bi-pencil-square me-2" title="Редактировть"></i></a>
+                                                                    <a href="#" class="text-danger" title="Удалить"><i class="bi bi-x-lg"></i></a>
+                                                                </td>
+                                                                <td class="text-nowrap">Март 2022</td>
+                                                                <td>100</td>
+                                                                <td>100</td>
+                                                                <td>100</td>
+                                                                <td>100</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <a class="btn btn-outline-success mb-2" data-bs-toggle="collapse" href="#formCounterValues" role="button" aria-expanded="false" aria-controls="formCounterValues"><i class="bi bi-plus-lg me-1"></i>Добавить</a>
+                                                <div class="collapse" id="formCounterValues">
+                                                    <div class="card card-body rounded-0">
+                                                        <form action="">
+                                                            <fieldset class="py-3">
+                                                                <div class="row mb-3">
+                                                                    <label for="month" class="col-md-4 col-form-label">Месяц</label>
+                                                                    <div class="col-sm col-xl-6">
+                                                                        <select name="" id="month" class="form-select">
+                                                                            <option selected>-</option>
+                                                                            <option value="1">июнь</option>
+                                                                            <option value="2">июль</option>
+                                                                            <option value="3">август</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row mb-3">
+                                                                    <label for="counter" class="col-md-4 col-form-label">Счётчик</label>
+                                                                    <div class="col-sm col-xl-6">
+                                                                        <select name="" id="counter" class="form-select">
+                                                                            <option selected>-</option>
+                                                                            <option value="1">июнь</option>
+                                                                            <option value="2">июль</option>
+                                                                            <option value="3">август</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row mb-3">
+                                                                    <label for="valueCounter" class="col-md-4 col-form-label">Значение</label>
+                                                                    <div class="col-sm col-xl-6">
+                                                                        <input class="form-control" type="text" id="valueCounter">
+                                                                    </div>
+                                                                </div>
+                                                            </fieldset>
+                                                            <div class="d-flex align-items-center justify-content-between">
+                                                                <div>
+                                                                    <button class="btn btn-primary" type="button" disabled>
+                                                                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                                                        Сохраняем...
+                                                                    </button>
+                                                                    <button type="submit" class="btn btn-primary"><i class="bi bi-save me-1"></i>Сохранить</button>
+                                                                    <a href="#formCounterValues" class="btn btn-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="formCounterValues">Закрыть</a>
+                                                                </div>
+                                                                <div class="text-success text-nowrap"><i class="bi bi-check-lg me-1"></i>Сохранено</div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="tab-pane fade" id="usefulLinks" role="tabpanel" aria-labelledby="usefulLinks-tab" tabindex="0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus repudiandae cumque quae doloremque enim architecto quam, perspiciatis nulla vitae dignissimos iure, sed recusandae! Labore aliquid quam debitis ut cupiditate mollitia!</div>
+                                            <!-- <div class="tab-pane fade" id="usefulLinks" role="tabpanel" aria-labelledby="usefulLinks-tab" tabindex="0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus repudiandae cumque quae doloremque enim architecto quam, perspiciatis nulla vitae dignissimos iure, sed recusandae! Labore aliquid quam debitis ut cupiditate mollitia!</div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -500,6 +579,9 @@
                             </div>
                             <div class="tab-pane fade" id="notification-settings" role="tabpanel" aria-labelledby="notification-settings-list">
                                 Настройка уведомлений
+                            </div>
+                            <div class="tab-pane fade" id="other-info" role="tabpanel" aria-labelledby="other-info-list">
+                                Прочая информация
                             </div>
                         </div>
                     </div>

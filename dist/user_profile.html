@@ -23,7 +23,7 @@
 
 <body>
     <div class="wrapper">
-        <!-- @@include('includes/header.html') -->
+        
         <nav class="navbar navbar-main navbar-expand-lg shadow">
             <div class="container">
                 <a class="navbar-brand fw-bold text-uppercase" href="#">rent-pult.ru</a>
@@ -41,7 +41,16 @@
                                 <a class="nav-link" href="index.html">Главная</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="#">Квартиры</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Управление квартирами</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="about.html">О системе</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Блог</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contacts.html">Контакты</a>
@@ -89,7 +98,7 @@
                     </ol>
                 </nav>
                 <h1 class="page-title">
-                    <div>Профиль пользователя</div>
+                    <div>Личный кабинет</div>
                     <a href="#" class="btn btn-outline-primary btn-sm mt-2 mt-sm-0"><i class="bi bi-arrow-left me-1"></i>Назад</a>
                 </h1>
                 <!-- <h4 class="fw-bold text-secondary mb-3">Данные пользователя</h4> -->
@@ -117,7 +126,7 @@
                                     <span class="fs-5">+7 (926) 133-45-77</span>
                                 </div>
                             </div>
-                            <div class="col-lg mb-3">
+                            <!-- <div class="col-lg mb-3">
                                 <h5 class="fw-semibold fs-5">Основные функции</h5>
                                 <div class="card-text d-flex flex-row align-items-center mb-2">
                                     <span class="text-secondary fw-bold me-2">Собственник:</span>
@@ -131,7 +140,7 @@
                                     <span class="text-secondary fw-bold me-2">Арендатор:</span>
                                     <span class="fs-5">да</span>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="row">
                             <div class="col-lg offset-xl-2">
@@ -142,10 +151,10 @@
                 </div>
                 <div class="object-status-title">
                     <h4>Объекты в собственности</h4>
-                    <div class="form-check form-switch fs-5">
+                    <!-- <div class="form-check form-switch fs-5">
                         <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchObjectsInProperty">
                         <label class="form-check-label text-primary" for="flexSwitchObjectsInProperty"><i class="bi bi-eye-slash" title="Скрыть"></i></label>
-                    </div>
+                    </div> -->
                 </div>
                 <div id="objectsInProperty" class="mb-5">
                     <div class="card card-object">
@@ -155,7 +164,10 @@
                             </div>
                             <div class="col-md">
                                 <div class="card-object-content">
-                                    <h4 class="card-title">Квартира на Юбилейной</h4>
+                                    <div class="card-title">
+                                        <h4 class="mb-1 mb-sm-0">Квартира на Юбилейной</h4>
+                                        <div class="text-success text-nowrap small">ID: 00001-01</div>
+                                    </div>
                                     <div class="card-body">
                                         <div class="row align-items-center mb-1 mb-lg-0">
                                             <div class="col-lg-5">
@@ -269,27 +281,30 @@
                 </div>
                 <div class="object-status-title">
                     <h4>Объекты в управлении</h4>
-                    <div class="form-check form-switch fs-5">
+                    <!-- <div class="form-check form-switch fs-5">
                         <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchObjectsInManagement">
                         <label class="form-check-label text-primary" for="flexSwitchObjectsInManagement"><i class="bi bi-eye-slash" title="Скрыть"></i></label>
-                    </div>
+                    </div> -->
                 </div>
                 <div id="objectsInManagement" class="mb-5">
                     <div class="card card-object">
                         <div class="row g-0">
                             <div class="d-none d-xl-block col-xl-2 text-center">
                                 <a href="#">
-                                    <img src="images/dest/object1.jpg" class="img-fluid rounded-start" alt="квартира">
+                                    <img src="images/dest/object1.jpg" class="card-img-object rounded-start" alt="квартира">
                                 </a>
                             </div>
                             <div class="col-md">
                                 <div class="card-object-content">
-                                    <h4 class="card-title">Квартира родителей</h4>
+                                    <div class="card-title">
+                                        <h4 class="mb-1 mb-sm-0">Квартира родителей</h4>
+                                        <div class="text-success text-nowrap small">ID: 00012-03</div>
+                                    </div>
                                     <div class="card-body">
                                         <div class="row align-items-center mb-1 mb-lg-0">
                                             <div class="col-lg-5">
                                                 <div class="card-text">
-                                                    <span class="text-secondary fw-bold me-2">Собственник:</span>
+                                                    <span class="text-secondary fw-bold me-2">Собственник 1:</span>
                                                     <span>Петров Арсений Евгеньевич</span>
                                                 </div>
                                             </div>
@@ -302,8 +317,51 @@
                                         </div>
                                         <div class="row align-items-center mb-1 mb-lg-0">
                                             <div class="col-lg-5">
+                                                <div class="card-text">
+                                                    <span class="text-secondary fw-bold me-2">Собственник 2:</span>
+                                                    <span>Петров Арсений Евгеньевич</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg">
+                                                <div class="card-object-badge">
+                                                    <div class="badge-item bg-secondary bg-opacity-10">eroshenkov@gmail.com</div>
+                                                    <div class="badge-item bg-secondary bg-opacity-10">id:&nbsp;00001</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center mb-1 mb-lg-0">
+                                            <div class="col-lg-5">
+                                                <div class="card-text">
+                                                    <span class="text-secondary fw-bold me-2">Собственник 3:</span>
+                                                    <span>Петров Арсений Евгеньевич</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg">
+                                                <div class="card-object-badge">
+                                                    <div class="badge-item bg-secondary bg-opacity-10">eroshenkov@gmail.com</div>
+                                                    <div class="badge-item bg-secondary bg-opacity-10">id:&nbsp;00001</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center mb-1 mb-lg-0">
+                                            <div class="col-lg-5">
+                                                <div class="card-text">
+                                                    <span class="text-secondary fw-bold me-2">Управляющий 1:</span>
+                                                    <span>Иванов Иван Иванович</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg">
+                                                <div class="card-object-badge">
+                                                    <div class="badge-item bg-secondary bg-opacity-10">mail@gmail.com</div>
+                                                    <div class="badge-item bg-secondary bg-opacity-10">id:&nbsp;00002</div>
+                                                    <div class="badge-item bg-secondary bg-opacity-10">+79265568904</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center mb-1 mb-lg-0">
+                                            <div class="col-lg-5">
                                                 <div class="card-text text-orange">
-                                                    <span class="text-secondary fw-bold me-2">Управляющий:</span>
+                                                    <span class="text-secondary fw-bold me-2">Управляющий 2:</span>
                                                     <span>Иванов Иван Иванович</span>
                                                 </div>
                                             </div>
@@ -389,15 +447,15 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="btn btn-success" role="button" data-bs-toggle="modal" data-bs-target="#modalObjectRequest"><i class="bi bi-plus-lg me-1"></i>Добавить объект</a>
-                    <div class="text-info small mb-2">только через запрос собственнику</div>
+                    <!-- <a href="#" class="btn btn-success" role="button" data-bs-toggle="modal" data-bs-target="#modalObjectRequest"><i class="bi bi-plus-lg me-1"></i>Добавить объект</a>
+                    <div class="text-info small mb-2">только через запрос собственнику</div> -->
                 </div>
                 <div class="object-status-title">
                     <h4>Объекты в аренде</h4>
-                    <div class="form-check form-switch fs-5">
+                    <!-- <div class="form-check form-switch fs-5">
                         <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchObjectsForRent">
                         <label class="form-check-label text-primary" for="flexSwitchObjectsForRent"><i class="bi bi-eye-slash" title="Скрыть"></i></label>
-                    </div>
+                    </div> -->
                 </div>
                 <div id="objectsForRent" class="mb-5">
                     <div class="card card-object">
@@ -407,7 +465,10 @@
                             </div>
                             <div class="col-md">
                                 <div class="card-object-content">
-                                    <h4 class="card-title">Квартира в аренду</h4>
+                                    <div class="card-title">
+                                        <h4 class="mb-1 mb-sm-0">Квартира в аренду</h4>
+                                        <div class="text-success text-nowrap small">ID: 00107-04</div>
+                                    </div>
                                     <div class="card-body">
                                         <div class="row align-items-center mb-1 mb-lg-0">
                                             <div class="col-lg-5">
@@ -497,8 +558,8 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="btn btn-success" role="button" data-bs-toggle="modal" data-bs-target="#modalObjectRequest"><i class="bi bi-plus-lg me-1"></i>Добавить объект</a>
-                    <div class="text-info small mb-2">только через запрос собственнику или управляющему</div>
+                    <!-- <a href="#" class="btn btn-success" role="button" data-bs-toggle="modal" data-bs-target="#modalObjectRequest"><i class="bi bi-plus-lg me-1"></i>Добавить объект</a>
+                    <div class="text-info small mb-2">только через запрос собственнику или управляющему</div> -->
                 </div>
             </div>
         </main>
@@ -506,9 +567,24 @@
             <div class="container">
                 <div class="py-3 my-4">
                     <ul class="nav justify-content-center border-bottom border-secondary pb-3 mb-3">
-                        <li class="nav-item"><a href="index.html" class="nav-link px-2">Главная</a></li>
-                        <li class="nav-item"><a href="about.html" class="nav-link px-2">О системе</a></li>
-                        <li class="nav-item"><a href="contacts.html" class="nav-link px-2">Контакты</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Квартиры</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Управление квартирами</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">О системе</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Блог</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Контакты</a>
+                        </li>
                     </ul>
                     <p class="text-center">© 2022, rent-pult.ru</p>
                 </div>
@@ -516,7 +592,7 @@
         </footer>
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="modalUserInfo" tabindex="-1" aria-hidden="true">
+    <div class="modal modal-main fade" id="modalUserInfo" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -551,7 +627,7 @@
                             </div>
                         </div>
                         <hr>
-                        <div class="mb-3">
+                        <!-- <div class="mb-3">
                             <h5 class="fw-light fs-5">Основные функции</h5>
                             <div class="mb-3">
                                 <div class="form-check form-switch">
@@ -572,7 +648,7 @@
                                 </div>
                             </div>
                         </div>
-                        <hr>
+                        <hr> -->
                         <div class="mb-3">
                             <h5 class="fw-light fs-5">Смена пароля</h5>
                             <div class="row">
@@ -598,7 +674,7 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="modalObjectRequest" tabindex="-1" aria-hidden="true">
+    <!-- <div class="modal modal-main fade" id="modalObjectRequest" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -623,8 +699,8 @@
                 </form>
             </div>
         </div>
-    </div>
-    <div class="modal fade" id="modalObjectNotice" tabindex="-1" aria-hidden="true">
+    </div> -->
+    <div class="modal modal-main fade" id="modalObjectNotice" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -648,35 +724,53 @@
                                 </select>
                             </div>
                             <div class="col col-md">
-                                <button type="submit" class="btn btn-outline-success btn-sm"><i class="bi bi-funnel-fill"></i></button>
+                                <button type="submit" class="btn btn-outline-success btn-sm" title="Фильтровать"><i class="bi bi-funnel-fill"></i></button>
                             </div>
                         </div>
                     </form>
                     <hr>
-                    <div class="card border-orange mb-3">
+                    <div class="card card-notice active mb-3">
                         <div class="card-body">
                             <h5 class="card-title">Запрос на аренду</h5>
                             <h6 class="card-subtitle mb-2 text-muted">17.06.2022 г.</h6>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-outline-success btn-sm"><i class="bi bi-check-lg me-1"></i>Подтвердить</a>
-                            <a href="#" class="btn btn-outline-danger btn-sm"><i class="bi bi-x-lg me-1"></i>Отклонить</a>
+                            <div class="notice-files mb-2">
+                                <a href="#" class="mb-1 mb-sm-0 me-3 text-nowrap" target="_blank"><i class="bi bi-file-earmark-arrow-down me-1"></i>file_sdfjkl_fksk_kldfs.png</a>
+                                <a href="#" class="mb-1 mb-sm-0 me-3 text-nowrap" target="_blank"><i class="bi bi-file-earmark-arrow-down me-1"></i>file.pdf</a>
+                                <a href="#" class="mb-1 mb-sm-0 me-3 text-nowrap" target="_blank"><i class="bi bi-file-earmark-arrow-down me-1"></i>files.zip</a>
+                            </div>
+                            <div class="notice-btn">
+                                <a href="#" class="btn btn-outline-success btn-sm"><i class="bi bi-check-lg me-1"></i>Подтвердить</a>
+                                <a href="#" class="btn btn-outline-danger btn-sm"><i class="bi bi-x-lg me-1"></i>Отклонить</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="card border-orange mb-3">
+                    <div class="card card-notice active mb-3">
                         <div class="card-body">
                             <h5 class="card-title">Подтверждение оплаты</h5>
                             <h6 class="card-subtitle mb-2 text-muted">17.06.2022 г.</h6>
                             <p class="card-text">Оплата за май отправлена</p>
-                            <a href="#" class="btn btn-outline-success btn-sm"><i class="bi bi-check-lg me-1"></i>Подтвердить</a>
-                            <a href="#" class="btn btn-outline-danger btn-sm"><i class="bi bi-x-lg me-1"></i>Отклонить</a>
+                            <div class="notice-files mb-2">
+                                <a href="#" class="mb-1 mb-sm-0 me-3 text-nowrap" target="_blank"><i class="bi bi-file-earmark-arrow-down me-1"></i>file.pdf</a>
+                                <a href="#" class="mb-1 mb-sm-0 me-3 text-nowrap" target="_blank"><i class="bi bi-file-earmark-arrow-down me-1"></i>files.zip</a>
+                            </div>
+                            <div class="notice-btn">
+                                <a href="#" class="btn btn-outline-success btn-sm"><i class="bi bi-check-lg me-1"></i>Подтвердить</a>
+                                <a href="#" class="btn btn-outline-danger btn-sm"><i class="bi bi-x-lg me-1"></i>Отклонить</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="card text-secondary mb-3">
+                    <div class="card card-notice mb-3">
                         <div class="card-body">
                             <h5 class="card-title">Подтверждение оплаты</h5>
                             <h6 class="card-subtitle mb-2 text-muted">17.06.2022 г.</h6>
                             <p class="card-text">Оплата за апрель отправлена</p>
-                            <small class="text-success"><i class="bi bi-check-lg me-1"></i>Подтверждено</small>
+                            <div class="notice-files mb-2 mb-lg-0">
+                                <a href="#" class="mb-1 mb-sm-0 me-3 text-nowrap" target="_blank"><i class="bi bi-file-earmark-arrow-down me-1"></i>files.zip</a>
+                            </div>
+                            <div class="notice-btn">
+                                <small class="text-success"><i class="bi bi-check-lg me-1"></i>Подтверждено</small>
+                            </div>
                         </div>
                     </div>
                 </div>

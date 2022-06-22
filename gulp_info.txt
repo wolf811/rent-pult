@@ -6,3 +6,13 @@ npm i gulp-concat gulp-uglify-es --save-dev  //требует версию node.
 npm i --save-dev gulp-sass sass gulp-less gulp-autoprefixer gulp-clean-css
 npm i -D sass
 npm i --save-dev compress-images gifsicle@5.3.0 pngquant-bin@6.0.0 del
+
+
+Если появляется похожая ошибка:
+[12:10:29] 'browsersync' errored after 2.6 s
+[12:10:29] Error: listen EADDRINUSE: address already in use :::3003
+
+ТО надо убить процесс, который ее вызывает (скорее всего gulp)
+ищем процесс: lsof -i tcp:3000  (свой address указываем)
+
+убиваем процесс по номеру PID: kill -9 PID (сам номер)
