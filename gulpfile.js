@@ -97,12 +97,13 @@
 	}
 
 	function include() {
-	    return src(['app/*.html'])
+	    return src(['./app/*.html'])
 	        .pipe(fileinclude({
 	            prefix: '@@',
 	            basepath: '@file'
 	        }))
-	        .pipe(dest('dist'));
+	        .pipe(dest('./dist'))
+			.pipe(browserSync.stream()); // Сделаем инъекцию в браузер
 	}
 
 	function browserSyncReload(done) {
@@ -150,11 +151,11 @@
 	exports.cleanimg = cleanimg;
 
 	// Создаем новый таск "build", который последовательно выполняет нужные операции
-	exports.build = series(cleandist, styles, scripts, images, include, buildcopy);
+	exports.build = series(cleandist, include, styles, scripts, images, buildcopy);
 	// exports.build = series(include, cleandist, styles, scripts, images, buildcopy);
 
 	// Экспортируем дефолтный таск с нужным набором функций
-	exports.default = parallel(styles, scripts, browsersync, startwatch, include);
+	exports.default = parallel(include, styles, scripts, browsersync, startwatch);
 
 	/*
 	Команды gulp:
